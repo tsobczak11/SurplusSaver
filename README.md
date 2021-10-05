@@ -1,8 +1,11 @@
 # CS480-final-project-surplus_saver
  
-### Table of Contents
+## Table of Contents
+1. [Database](#database)
+1. [Author(s)](#author)
+1. [Database description](#description)
  
-## Database
+# Database
 Name: surplus_saver
  
 ## Author(s)
@@ -11,7 +14,7 @@ Name: surplus_saver
 3. Ryan Thommes
 4. Thomas Sobczak
  
-## Description
+# Database Description
 The purpose of surplus_saver is to track farms who have surplus crops that they don't need, and instead of wasting those crops, farmers can give farm and crop information to be stored in the database where then individuals or groups who face food insecurity or organizations/food banks that help feed people facing food insecurity, can take the surplus crops and put them to good use.
 
 Some data I could store in the database are farm name, farm location, farm phone or contact information, crop name, status of crop, quantity of crop, maybe how long till it rots/expires, etc.
