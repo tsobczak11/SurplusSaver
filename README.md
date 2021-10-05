@@ -3,6 +3,7 @@
 ### Table of Contents
  
 ## Database
+Name: cs480-final-project-surplus_saver
  
 ## Author(s)
 1. Matthew Alvero
