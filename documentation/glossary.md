@@ -26,7 +26,7 @@ Entity #3 Name: shipment
    
    Description: Information on the product being shipped by the supplier.
    
-   Relationship(s): 
+   Relationship(s): Shipment-Sends-Order M(1)-M(10
    
    Attribute(s): shipment_id 1-1(1), order_id 1-1(1), shipment_date 1-1(1)
    
