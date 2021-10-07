@@ -32,9 +32,9 @@ Entity #3 Name: shipment
    
 Entity #4 Name: Order
 
-   Synonyms: Cargo, Freight
+   Synonyms: Application
    
-   Description: Information on the product being shipped by the supplier.
+   Description: Information on the product being bought by the customer.
    
    Relationship(s): Order-Create-Shipment 1(1)-1(1)
    
