@@ -46,9 +46,9 @@
    
    - **Description:** The type of crop and information about the crop
    
-   - **Relationship(s):** 
+   - **Relationship(s):** Crop-Contains-Category
    
-   - **Attribute(s):**
+   - **Attribute(s):** category_id, type, category_name, category_description
    
 ## Entity #6 Name: crop
 
@@ -78,7 +78,7 @@
    
    - **Relationship(s):** region-contains-farm (1)(1)-(1)(M)
    
-   - **Attribute(s):** region_id (1)(1)-(1)(M) geographic_location (1)(1)-(1)(1) climate (1)(m)-(1)(m)
+   - **Attribute(s):** location_id (1)(1)-(1)(M), state (1)(1)-(1)(1), street (1)(1)-(1)(1), zipcode (1)(1)-(1)(1), country (1)(1)-(1)(1), climate (1)(m)-(1)(m)
  
 ## Entity #9 Name: available_surplus
 
