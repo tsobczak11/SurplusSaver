@@ -70,9 +70,9 @@
    
    - **Attribute(s):**
    
-## Entity #8 Name: region
+## Entity #8 Name: location
 
-   - **Synonyms:** location, area
+   - **Synonyms:** area, spot
    
    - **Description:** A region is a area that holds farms.
    
