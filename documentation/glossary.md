@@ -2,7 +2,7 @@
 
 ## Entity #1 Name: farm
 
-   - **Synonyms:** Distributor, Supplier, Providor
+   - **Synonyms:** Distributor, Supplier, Provider
   
    - **Description:** A farm is the institution that is looking to provide others with their surplus product.
   
