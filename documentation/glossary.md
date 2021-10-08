@@ -8,7 +8,7 @@
   
    - **Relationship(s):** Farm-Retrieves-Order M(1)-M(1), farm-ShipsTo-Shipment M(1)-M(1)
    
-   - **Attribute(s):** farm 1-1(1), order_id 1-M(1), transport_id 1-M(1)
+   - **Attribute(s):** farm_id 1-1(1), order_id 1-M(1), transport_id 1-M(1)
 
 ## Entity #2 Name: recipient
 
