@@ -22,7 +22,7 @@
    
 ## Entity #3 Name: transport
 
-   - **Synonyms:** Cargo, Freight, Shipment
+   - **Synonyms:** Cargo, Freight, Shipment, Transfer
    
    - **Description:** Information on the product being shipped by the supplier.
    
@@ -72,7 +72,7 @@
    
 ## Entity #8 Name: location
 
-   - **Synonyms:** area, spot
+   - **Synonyms:** area, spot, place
    
    - **Description:** A region is a area that holds farms.
    
