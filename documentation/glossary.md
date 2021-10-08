@@ -64,7 +64,7 @@
 
    - **Synonyms:** number, amount
    
-   - **Description:** 
+   - **Description:** The amount of surplus crops from farms.
    
    - **Relationship(s):** 
    
