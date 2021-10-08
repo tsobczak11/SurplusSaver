@@ -54,7 +54,7 @@
 
    - **Synonyms:** plant, food
    
-   - **Description:** Info about the specific crops being given away
+   - **Description:** Info about the specific crops being offered
    
    - **Relationship(s):** 
    
