@@ -54,7 +54,7 @@
 
    - **Synonyms:** plant, food
    
-   - **Description:** 
+   - **Description:** Info about the specific crops being given away
    
    - **Relationship(s):** 
    
@@ -74,7 +74,7 @@
 
    - **Synonyms:** area, spot, place
    
-   - **Description:** A region is a area that holds farms.
+   - **Description:** The location describes where the farm is
    
    - **Relationship(s):** region-contains-farm (1)(1)-(1)(M)
    
