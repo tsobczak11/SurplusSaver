@@ -6,7 +6,7 @@
   
    - **Description:** A farm is the individual who is looking to provide other with their surplus product.
   
-   - **Relationship(s):** Farm-Retrieves-Order M(1)-M(1), farm-ShipsTo-Shipment M(1)-M(1)
+   - **Relationship(s):** Farm-Retrieves-Order 1(1)-M(1), farm-ShipsTo-Shipment M(1)-M(1)
    
    - **Attribute(s):** farm_id 1-1(1), order_id 1-M(1), transport_id 1-M(1)
 
