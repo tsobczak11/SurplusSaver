@@ -32,7 +32,7 @@
    
 ## Entity #4 Name: order
 
-   - **Synonyms:** request
+   - **Synonyms:** request, transaction
    
    - **Description:** Information on the product being given to recipients.
    
