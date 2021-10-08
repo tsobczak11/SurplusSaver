@@ -52,7 +52,7 @@
    
 ## Entity #6 Name: crop
 
-   - **Synonyms:** 
+   - **Synonyms:** type, plant, food
    
    - **Description:** 
    
@@ -62,7 +62,7 @@
    
 ## Entity #7 Name: quantity
 
-   - **Synonyms:** 
+   - **Synonyms:** number, amount
    
    - **Description:** 
    
