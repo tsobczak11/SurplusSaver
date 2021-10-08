@@ -14,7 +14,7 @@
 
    - **Synonyms:** Consumer, Client, Receiver
    
-   - **Description:** A recipient is the individual who is looking to purchase the surplus product.
+   - **Description:** A recipient is the individual who is looking to receive the surplus product.
    
    - **Relationship(s):** Recipient-Places-Order M(1)-M(1)
    
