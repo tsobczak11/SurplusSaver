@@ -4,7 +4,7 @@
 
    - **Synonyms:** Distributor, Supplier, Providor
   
-   - **Description:** A farm is the individual who is looking to provide other with their surplus product.
+   - **Description:** A farm is the institution that is looking to provide others with their surplus product.
   
    - **Relationship(s):** Farm-Retrieves-Order 1(1)-M(1), farm-ShipsTo-Shipment M(1)-M(1)
    
@@ -32,9 +32,9 @@
    
 ## Entity #4 Name: order
 
-   - **Synonyms:** Application
+   - **Synonyms:** request
    
-   - **Description:** Information on the product being bought by the customer.
+   - **Description:** Information on the product being given to recipients.
    
    - **Relationship(s):** Order-Creates-Shipment 1(1)-1(1)
    
@@ -72,7 +72,7 @@
    
 ## Entity #8 Name: region
 
-   - **Synonyms:** 
+   - **Synonyms:** location, area
    
    - **Description:** 
    
