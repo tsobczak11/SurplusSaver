@@ -42,9 +42,9 @@
    
 ## Entity #5 Name: category
 
-   - **Synonyms:** 
+   - **Synonyms:** type, group, classification
    
-   - **Description:** 
+   - **Description:** The type of crop and information about the crop
    
    - **Relationship(s):** 
    
@@ -52,7 +52,7 @@
    
 ## Entity #6 Name: crop
 
-   - **Synonyms:** type, plant, food
+   - **Synonyms:** plant, food
    
    - **Description:** 
    
@@ -70,9 +70,9 @@
    
    - **Attribute(s):**
    
-## Entity #8 Name: region
+## Entity #8 Name: location
 
-   - **Synonyms:** location, area
+   - **Synonyms:** area, spot
    
    - **Description:** A region is a area that holds farms.
    
