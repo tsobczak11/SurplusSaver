@@ -52,13 +52,13 @@
    
 ## Entity #6 Name: crop
 
-   - **Synonyms:** plant, food
+   - **Synonyms:** product, plant, food
    
-   - **Description:** Info about the specific crops being offered
+   - **Description:** Group of cultivated plants or agricultural produce.
    
    - **Relationship(s):** 
    
-   - **Attribute(s):**
+   - **Attribute(s):** crop_id, crop_name, crop_description, crop_category
    
 ## Entity #7 Name: quantity
 
@@ -66,9 +66,9 @@
    
    - **Description:** The amount of surplus crops from farms.
    
-   - **Relationship(s):** 
+   - **Relationship(s):** quantity
    
-   - **Attribute(s):**
+   - **Attribute(s):** crop_id, quantity
    
 ## Entity #8 Name: location
 
