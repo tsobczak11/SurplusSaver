@@ -12,7 +12,7 @@
 
 ## Entity #2 Name: recipient
 
-   - **Synonyms:** Consumer, Purchaser, Client, Customer
+   - **Synonyms:** Consumer, Client, Receiver
    
    - **Description:** A recipient is the individual who is looking to purchase the surplus product.
    
@@ -84,7 +84,7 @@
 
    - **Synonyms:** over_inventory, quantity_available
    
-   - **Description:** The amount of surplus crops from farms.
+   - **Description:** The inventory if crops available.
    
    - **Relationship(s):** available_surplus-takefrom-quantity (M)(M)-(M)(M), available_surplus-takes-crops (M)(M)-(M)(M)
    
