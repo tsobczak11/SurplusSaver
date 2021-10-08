@@ -12,7 +12,7 @@
 
 ## Entity #2 Name: recipient
 
-   - **Synonyms:** Consumer, Purchaser, Client, Customer
+   - **Synonyms:** Consumer, Client, Receiver
    
    - **Description:** A recipient is the individual who is looking to receive the surplus product.
    
