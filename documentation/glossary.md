@@ -12,9 +12,9 @@
 
 ## Entity #2 Name: recipient
 
-   - **Synonyms:** Consumer, Client, Receiver
+   - **Synonyms:** Consumer, Purchaser, Client, Customer
    
-   - **Description:** A recipient is the individual who is looking to receive the surplus product.
+   - **Description:** A recipient is the individual who is looking to purchase the surplus product.
    
    - **Relationship(s):** Recipient-Places-Order M(1)-M(1)
    
@@ -70,9 +70,9 @@
    
    - **Attribute(s):**
    
-## Entity #8 Name: location
+## Entity #8 Name: region
 
-   - **Synonyms:** area, spot
+   - **Synonyms:** location, area
    
    - **Description:** A region is a area that holds farms.
    
@@ -86,7 +86,7 @@
    
    - **Description:** The amount of surplus crops from farms.
    
-   - **Relationship(s):** available_surplus-takefrom-quantity, available_surplus-takes-crops
+   - **Relationship(s):** available_surplus-takefrom-quantity (M)(M)-(M)(M), available_surplus-takes-crops (M)(M)-(M)(M)
    
-   - **Attribute(s):** available_surplus_id, crop_id, quantity, 
+   - **Attribute(s):** available_surplus_id (1)(1)-(1)(M), crop_id (1)(1)-(1)(M), quantity (M)(M)-(M)(M), 
    
