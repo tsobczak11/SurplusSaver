@@ -74,19 +74,19 @@
 
    - **Synonyms:** location, area
    
-   - **Description:** 
+   - **Description:** A region is a area that holds farms.
    
-   - **Relationship(s):** 
+   - **Relationship(s):** region-contains-farm (1)(1)-(1)(M)
    
-   - **Attribute(s):**
+   - **Attribute(s):** region_id (1)(1)-(1)(M) geographic_location (1)(1)-(1)(1) climate (1)(m)-(1)(m)
  
 ## Entity #9 Name: available_surplus
 
-   - **Synonyms:** 
+   - **Synonyms:** over_inventory, quantity_available
    
-   - **Description:** 
+   - **Description:** The amount of surplus crops from farms.
    
-   - **Relationship(s):** 
+   - **Relationship(s):** available_surplus-takefrom-quantity, available_surplus-takes-crops
    
-   - **Attribute(s):**
+   - **Attribute(s):** available_surplus_id, crop_id, quantity, 
    
