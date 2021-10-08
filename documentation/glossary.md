@@ -56,7 +56,7 @@
    
    - **Description:** Group of cultivated plants or agricultural produce.
    
-   - **Relationship(s):** crop-contains-category (1)(1)
+   - **Relationship(s):** Crop-Contains-Category
    
    - **Attribute(s):** crop_id, crop_name, crop_description, crop_category
    
