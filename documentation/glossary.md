@@ -80,7 +80,7 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Attribute(s):** order_id 1-1(1), recipient_id 1-1(1), order_date date 1-1(1)
    
-   - **Dependent Entities and Dependency Relationships:**
+   - **Dependent Entities and Dependency Relationships:** Dependent entity, order-BelongsTo-farm
    
    - **Supertypes, Subtypes, and Partitions:** Subtype entity
    
@@ -102,7 +102,7 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
       - **Attribute Type:** date
 
-      - **Data Type:** date
+      - **Data Type:** DATE
 
       - **Description:** 'date' is used for attributes with which label information with a date requirement. Characters in date are in YYYY-MM-DD format.Any other punctuation is not allowed. Examples are farm 2018-04-28.
    
