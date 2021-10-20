@@ -160,6 +160,32 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Implementing Attribute Types:**
    
+      - **Attribute Type:** id
+
+      - **Data Type:** CHAR(4)
+
+      - **Description:** 'id' is used for attributes with which label information with up to four
+characters. Characters in id are either alphabetic or numeric. Punctuation is not allowed. Examples
+are farm ids, such as AB12, and stock symbols, such as AAPL.
+
+      - **Attribute Type:** name
+
+      - **Data Type:** CHAR(50)
+
+      - **Description:** 'name' is used for attributes with which the name of the crop is displayed up to 50 characters. Examples are 'corn', 'apple', 'orange'.
+      
+      - **Attribute Type:** category
+
+      - **Data Type:** CHAR(50)
+
+      - **Description:** 'category' is used for attributes with which the cateory of the crop is displayed up to 50 characters. Examples are 'oil crop', 'food crop', 'feed crop'.
+      
+      - **Attribute Type:** description
+
+      - **Data Type:** CHAR(100)
+
+      - **Description:** 'description' is used for attributes with which the description of the crop is displayed up to 100 characters. Example is 'Oats are annual grasses belonging to the genus Avena, in the family Poaceae and are grown primarily for use as livestock feed.'
+   
 ## Entity #7 Name: quantity
 
    - **Synonyms:** number, amount
