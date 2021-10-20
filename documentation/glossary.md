@@ -64,9 +64,9 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Supertypes, Subtypes, and Partitions:** Supertype entity
    
-   - **Cascade and/or Restrict actions for Dependency Relationships:**
+   - **Cascade and/or Restrict actions for Dependency Relationships:** Cascade on primary key update and delete. Restrict on foreign key insert and update.
    
-   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:**
+   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:** Cascade on primary key update and delete. Restrict on foreign key insert and update.
    
    - **Implementing Attribute Types:**
    
@@ -138,11 +138,11 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Dependent Entities and Dependency Relationships:** Dependant entity, crop-BelongsTo-order
    
-   - **Supertypes, Subtypes, and Partitions:** 
+   - **Supertypes, Subtypes, and Partitions:** Supertype entity
    
-   - **Cascade and/or Restrict actions for Dependency Relationships:**
+   - **Cascade and/or Restrict actions for Dependency Relationships:** Cascade on primary key update and delete. Restrict on foreign key insert and update.
    
-   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:**
+   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:** Cascade on primary key update and delete. Restrict on foreign key insert and update.
    
    - **Implementing Attribute Types:**
    
