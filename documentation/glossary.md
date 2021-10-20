@@ -62,7 +62,7 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Dependent Entities and Dependency Relationships:** Dependant entity, transport-BelongsTo-farm
    
-   - **Supertypes, Subtypes, and Partitions:** 
+   - **Supertypes, Subtypes, and Partitions:** Supertype entity
    
    - **Cascade and/or Restrict actions for Dependency Relationships:**
    
@@ -82,7 +82,7 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Dependent Entities and Dependency Relationships:** Dependent entity, order-BelongsTo-farm
    
-   - **Supertypes, Subtypes, and Partitions:** Subtype entity
+   - **Supertypes, Subtypes, and Partitions:** Supertype entity
    
    - **Cascade and/or Restrict actions for Dependency Relationships:** Cascade on primary key update and delete
 Restrict on foreign key insert and update
