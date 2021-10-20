@@ -60,7 +60,7 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Attribute(s):** transport_id 1-1(1), order_id 1-1(1), transport_date 1-1(1)
    
-   - **Dependent Entities and Dependency Relationships:**
+   - **Dependent Entities and Dependency Relationships:** Dependant entity
    
    - **Supertypes, Subtypes, and Partitions:** 
    
@@ -136,7 +136,7 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Attribute(s):** crop_id, crop_name, crop_description, crop_category
    
-   - **Dependent Entities and Dependency Relationships:**
+   - **Dependent Entities and Dependency Relationships:** Dependant entity
    
    - **Supertypes, Subtypes, and Partitions:** 
    
