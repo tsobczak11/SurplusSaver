@@ -70,6 +70,20 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Implementing Attribute Types:**
    
+      - **Attribute Type:** id
+
+      - **Data Type:** CHAR(4)
+
+      - **Description:** 'id' is used for attributes with which label information with up to four
+characters. Characters in id are either alphabetic or numeric. Punctuation is not allowed. Examples
+are farm ids, such as AB12, and stock symbols, such as AAPL.
+
+      - **Attribute Type:** date
+
+      - **Data Type:** DATE
+
+      - **Description:** 'date' is used for attributes with which label information with a date requirement. Characters in date are in YYYY-MM-DD format. Any other punctuation is not allowed. Examples are farm 2018-04-28.
+   
 ## Entity #4 Name: order
 
    - **Synonyms:** request, transaction
@@ -104,7 +118,7 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
 
       - **Data Type:** DATE
 
-      - **Description:** 'date' is used for attributes with which label information with a date requirement. Characters in date are in YYYY-MM-DD format.Any other punctuation is not allowed. Examples are farm 2018-04-28.
+      - **Description:** 'date' is used for attributes with which label information with a date requirement. Characters in date are in YYYY-MM-DD format. Any other punctuation is not allowed. Examples are farm 2018-04-28.
    
 ## Entity #5 Name: category
 
