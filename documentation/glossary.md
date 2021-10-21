@@ -216,15 +216,27 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Attribute(s):** location_id (1)(1)-(1)(M), state (1)(1)-(1)(1), street (1)(1)-(1)(1), zipcode (1)(1)-(1)(1), country (1)(1)-(1)(1), climate (1)(m)-(1)(m)
    
-   - **Dependent Entities and Dependency Relationships:**
+   - **Dependent Entities and Dependency Relationships:** Master entity
    
-   - **Supertypes, Subtypes, and Partitions:** 
+   - **Supertypes, Subtypes, and Partitions:** Supertype entity
    
-   - **Cascade and/or Restrict actions for Dependency Relationships:**
+   - **Cascade and/or Restrict actions for Dependency Relationships:** None
    
-   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:**
+   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:** None
    
    - **Implementing Attribute Types:**
+   
+      - **Attribute Type:** street, country
+
+      - **Data Type:** varchar
+
+      - **Description:** variable length string describing address
+   
+      - **Attribute Type:** zip
+
+      - **Data Type:** smallint unsigned
+
+      - **Description:** small int with no need for negative numbers for zip
  
 ## Entity #9 Name: available_surplus
 
@@ -236,13 +248,23 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Attribute(s):** available_surplus_id (1)(1)-(1)(M), crop_id (1)(1)-(1)(M), quantity (M)(M)-(M)(M), 
    
-   - **Dependent Entities and Dependency Relationships:**
+   - **Dependent Entities and Dependency Relationships:** Master entity
    
-   - **Supertypes, Subtypes, and Partitions:** 
+   - **Supertypes, Subtypes, and Partitions:** Supertype entity
    
-   - **Cascade and/or Restrict actions for Dependency Relationships:**
+   - **Cascade and/or Restrict actions for Dependency Relationships:** Cascade on primary key update and delete
+Restrict on foreign key insert and update
    
-   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:**
+   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:** Cascade on primary key update and delete
+Restrict on foreign key insert and update
    
    - **Implementing Attribute Types:**
    
+      - **Attribute Type:** order_id, crop_id
+
+      - **Data Type:** CHAR(4)
+
+      - **Description:** lists all available surplus inventory and identifying information. 'id' is used for attributes with which label information with up to four
+characters. Characters in id are either alphabetic or numeric. Punctuation is not allowed. Examples
+are farm ids, such as AB12, and stock symbols, such as AAPL.
+
