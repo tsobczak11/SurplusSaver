@@ -39,10 +39,10 @@ This database is one of a kind, we could not find any existing widescale program
 ## CRUD for order
 ![order CRUD](/images/order_CRUD.png)
 
-![order create](/images/order_farm.png)
+![order create](/images/update_order.png)
 
-![order read](/images/order_farm.png)
+![order read](/images/update_order.png)
 
-![order update](/images/order_farm.png)
+![order update](/images/update_order.png)
 
-![order delete](/images/order_farm.png)
+![order delete](/images/update_order.png)
