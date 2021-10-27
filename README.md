@@ -27,3 +27,15 @@ This database is one of a kind, we could not find any existing widescale program
 
 ## CRUD for farm
 ![farm CRUD](/images/farm_CRUD.png)
+
+## Create a farm
+![farm create](/images/create_farm.png)
+
+## Read a farm
+![farm read](/images/read_farm.png)
+
+## Update a farm
+![farm update](/images/update_farm.png)
+
+## Delete a farm
+![farm delete](/images/delete_farm.png)
