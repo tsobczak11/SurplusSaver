@@ -35,7 +35,7 @@
   <body>
 <!-- TODO: 3. Change the title of the main page from "CS480 | Database Systems" to your name -->
 <!-- <h1 style="text-align: center;">CS 480 | Database System</h1> -->
-<h1 style="text-align: center;">surplus_saver</h1>
+<h1 style="text-align: center;">CS 480 | surplus_saver</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
