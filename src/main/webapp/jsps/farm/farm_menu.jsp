@@ -21,13 +21,14 @@
 
   </head>
   
+  <!-- Modified the header text to match entity name and also following hyperlinks - Thomas Sobczak -->
   <body>
-    <h1>CRUD operations for Entity1 </h1>
+    <h1>CRUD operations for farm </h1>
     <br>
-	<a href="<c:url value='/jsps/entity1/entity1create.jsp'/>" target="_parent">Create Entity1</a> |&nbsp; 
-	<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Entity1</a> |&nbsp;
-	<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Entity1</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Entity1</a>	
+	<a href="<c:url value='/jsps/farm/farm_create.jsp'/>" target="_parent">Create farm</a> |&nbsp; 
+	<a href="<c:url value='/jsps/farm/farm_read.jsp'/>" target="_parent">Read farm</a> |&nbsp;
+	<a href="<c:url value='/jsps/farm/farm_update.jsp'/>" target="_parent">Update farm</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/farm/farm_delete.jsp'/>" target="_parent">Delete farm</a>	
 	    
   </body>
 </html>

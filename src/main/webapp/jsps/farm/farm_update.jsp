@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Entity1</title>
+    <title>Update a farm</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,19 @@
   </head>
   
   <body>
-  <h1>Update</h1>
+  <h1>Update a farm</h1>
 <form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update User   :<input type="text" name="username" value="${form.username }"/>
+	Update farm:<input type="text" name="farm_id" value="${form.farm_id }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<!--  <br/>
+	Update order id   :<input type="text" name="order_id" value="${form.order_id }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Update shipment id   :<input type="text" name="shipment_id" value="${form.shipment_id }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span> -->
+	<br/>
+	<input type="submit" value="Update farm"/>
 </form>
   </body>
 </html>
