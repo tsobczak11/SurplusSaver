@@ -35,19 +35,23 @@
   <body>
 <!-- TODO: 3. Change the title of the main page from "CS480 | Database Systems" to your name -->
 <!-- <h1 style="text-align: center;">CS 480 | Database System</h1> -->
+<!-- Thomas Sobczak = farm and order entities -->
 <h1 style="text-align: center;">CS 480 | surplus_saver</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
 			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
-			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp; 
+			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp;
+			<a href="<c:url value='/jsps/farm/farm_menu.jsp'/>" target="body">CRUD farm</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/order/order_menu.jsp'/>" target="body">CRUD order</a> |&nbsp;&nbsp;
 	
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
-			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/farm/farm_menu.jsp'/>" target="body">CRUD farm</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/order/order_menu.jsp'/>" target="body">CRUD order</a> |&nbsp;&nbsp;
 
 		</c:otherwise>
 	</c:choose>

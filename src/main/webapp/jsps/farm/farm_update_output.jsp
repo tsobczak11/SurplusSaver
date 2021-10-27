@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete a farm</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update a farm</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
@@ -42,7 +42,7 @@
 	Email	：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	<input type="submit" value="Update farm"/>
 </form>
 
 </body>

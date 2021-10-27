@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete a farm</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete a farm</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
@@ -33,7 +33,7 @@
 	<br/>
 	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	<input type="submit" value="Delete farm"/>
 </form>
 
 </body>
