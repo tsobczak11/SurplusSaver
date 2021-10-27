@@ -22,3 +22,8 @@ Some data we could store in the database are farm name, farm location, farm phon
 We're not really sure what kind of software would be needed for this database, but we would probably use Java and Eclipse, some GUI interfaces, and a web-based server.
 
 This database is one of a kind, we could not find any existing widescale programs that solve this problem, or at least not in the way we intend to do it in a simple and transparent way.
+
+# Screenshots:
+
+## CRUD for farm
+![farm CRUD](/images/logo.png)
