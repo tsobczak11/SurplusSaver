@@ -34,20 +34,20 @@
     
     <br>
     
-	<p>Some data I could store in the database are farm name, farm location, farm phone or contact information,
-	 crop name, status of crop, quantity of crop, maybe how long till it rots/expires, etc.
+	<p>Some data we could store in the database are farm name, farm location, farm phone or contact information, 
+	crop name, status of crop, quantity of crop, maybe how long till it rots/expires, etc.
 	</p>
 	 
 	<br>
 
-	<p>I'm not really sure what kind of software would be needed for this database, but I would probably use eclipse,
-	 some GUI interfaces, and a web-based server.
+	<p>We're not really sure what kind of software would be needed for this database, but we would probably use 
+	Java and Eclipse, some GUI interfaces, and a web-based server.
 	</p>
 	
 	<br>
 	
-	<p>This database is one of a kind, I could not find any existing widescale programs that solve this problem, 
-	or at least not in the way I intend to do it in a simple and transparent way.
+	<p>This database is one of a kind, we could not find any existing widescale programs that solve this problem, 
+	or at least not in the way we intend to do it in a simple and transparent way.
 	</p>
     
   </body>
