@@ -48,15 +48,11 @@ This database is one of a kind, we could not find any existing widescale program
 ![order delete](/images/delete_order.png)
 
 ## CRUD for crop
-![image](https://user-images.githubusercontent.com/54131271/139552055-c9c1defb-67b7-42b5-96bd-e451da2673d1.png)
+![image](https://user-images.githubusercontent.com/54131271/139553531-db029e68-580e-4ac3-bce1-e688b4398451.png)
 
-![image](https://user-images.githubusercontent.com/54131271/139552491-ddf0f042-bf5b-4aa1-896e-279304ad09a2.png)
+![image](https://user-images.githubusercontent.com/54131271/139553653-cd91e0e8-141e-40d1-9b2f-f53f90189c21.png)
 
 
-!
 
-!
-
-!
 
 ## CRUD for transport
