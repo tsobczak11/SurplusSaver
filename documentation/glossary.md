@@ -38,17 +38,39 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Relationship(s):** Recipient-Places-Order M(1)-M(1)
    
-   - **Attribute(s):** recipient_id 1-1(1), recipient_first_name M-M(1), recipient_first_name M-1(1), recipient_last_name M-1(1), recipient_address M-1(0), recipient_email_address M-1(1)
+   - **Attribute(s):** recipient_id 1-1(1), recipient_first_name M-M(1), recipient_first_name M-1(1), recipient_last_name M-1(1), recipient_location M-1(0), recipient_email_address M-1(1)
    
-   - **Dependent Entities and Dependency Relationships:**
+   - **Dependent Entities and Dependency Relationships:** Dependent Entity, recipient-liveat-location
    
-   - **Supertypes, Subtypes, and Partitions:** 
+   - **Supertypes, Subtypes, and Partitions:** Supertype entity
    
-   - **Cascade and/or Restrict actions for Dependency Relationships:**
+   - **Cascade and/or Restrict actions for Dependency Relationships:** Cascade on primary key update and delete
+   Restrict on foreign key insert and update
    
-   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:**
+   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:** Cascade on foreign key update and delete
+Restrict on foreign key insert and update
    
    - **Implementing Attribute Types:**
+   
+   		- **Attribute Type:** recipient_id
+   		- **Data Type:** INT
+   		- **Description:** Unique identifier for a recipient
+   		
+   		- **Attribute Type:** recipient_first_name
+   		- **Data Type:** CHAR(50)
+   		- **Description:** The first name in a recipients full name.
+   		
+   		- **Attribute Type:** recipient_last_name
+   		- **Data Type:** CHAR(50)
+   		- **Description:** The last name of a recipients full name.
+   		
+   		- **Attribute Type:** recipient_location
+   		- **Data Type:** INT
+   		- **Description:** The location id associated with the recipient.
+   		
+   		- **Attribute Type:** recipient_email_address
+   		- **Data Type:** CHAR(50)
+   		- **Description:** The email address of a recipient.
    
 ## Entity #3 Name: transport
 
@@ -130,15 +152,28 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Attribute(s):** category_id, type, category_name, category_description
    
-   - **Dependent Entities and Dependency Relationships:**
+   - **Dependent Entities and Dependency Relationships:** Master entity
    
-   - **Supertypes, Subtypes, and Partitions:** 
+   - **Supertypes, Subtypes, and Partitions:** Supertype entity
    
-   - **Cascade and/or Restrict actions for Dependency Relationships:**
+   - **Cascade and/or Restrict actions for Dependency Relationships:** Cascade on primary key update and delete.
    
-   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:**
+   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:** None
    
    - **Implementing Attribute Types:**
+   
+   		- **Attribute Type:** category_id
+   		- **Data Type:** INT
+   		- **Description:** Unique identifier for a category
+   		
+   		- **Attribute Type:** category_name
+   		- **Data Type:** VARCHAR(50)
+   		- **Description:** The name of a category.
+   		
+   		- **Attribute Type:** category_description
+   		- **Data Type:** VARCHAR(50)
+   		- **Description:** The description of a category.
+   
    
 ## Entity #6 Name: crop
 
@@ -196,15 +231,23 @@ are farm ids, such as AB12, and stock symbols, such as AAPL.
    
    - **Attribute(s):** crop_id, quantity
    
-   - **Dependent Entities and Dependency Relationships:**
+   - **Dependent Entities and Dependency Relationships:** Dependent entity, quantity-BelongsTo-crop
    
-   - **Supertypes, Subtypes, and Partitions:** 
+   - **Supertypes, Subtypes, and Partitions:** Supertype entity
    
-   - **Cascade and/or Restrict actions for Dependency Relationships:**
+   - **Cascade and/or Restrict actions for Dependency Relationships:** None
    
-   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:**
+   - **Cascade and/or Restrict rules on Foreign Keys that implement Dependency Relationships:** Cascade on foreign key update and delete.
    
    - **Implementing Attribute Types:**
+   		
+   		- **Attribute Type:** crop_id
+   		- **Data Type:** INT
+   		- **Description:** Foreign key for crop with quantity
+   		
+   		- **Attribute Type:** quantity
+   		- **Data Type:** INT
+   		- **Description:** The quantitative amount of a crop.
    
 ## Entity #8 Name: location
 
