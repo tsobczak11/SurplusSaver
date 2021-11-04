@@ -37,6 +37,7 @@
 <!-- <h1 style="text-align: center;">CS 480 | Database System</h1> -->
 <!-- Thomas Sobczak = farm and order entities -->
 <!-- Ramzi Rimawi = crop and transport entities -->
+<!-- Matthew Alvero = category, quantity, recipient entities -->
 <h1 style="text-align: center;">CS 480 | surplus_saver</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
@@ -47,6 +48,9 @@
 			<a href="<c:url value='/jsps/order/order_menu.jsp'/>" target="body">CRUD order</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/crop/crop_menu.jsp'/>" target="body">CRUD crop</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/transport/transport_menu.jsp'/>" target="body">CRUD transport</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/category/category_menu.jsp'/>" target="body">CRUD category</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/quantity/quantity_menu.jsp'/>" target="body">CRUD quantity</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/recipient/recipient_menu.jsp'/>" target="body">CRUD recipient</a> |&nbsp;&nbsp;
 	
 		</c:when>
 		<c:otherwise>
@@ -57,6 +61,9 @@
 			<a href="<c:url value='/jsps/order/order_menu.jsp'/>" target="body">CRUD order</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/crop/crop_menu.jsp'/>" target="body">CRUD crop</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/transport/transport_menu.jsp'/>" target="body">CRUD transport</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/category/category_menu.jsp'/>" target="body">CRUD category</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/quantity/quantity_menu.jsp'/>" target="body">CRUD quantity</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/recipient/recipient_menu.jsp'/>" target="body">CRUD recipient</a> |&nbsp;&nbsp;
 		</c:otherwise>
 	</c:choose>
 
