@@ -35,3 +35,30 @@ CREATE TABLE transport (
    PRIMARY KEY (shipment_id),
    FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );
+
+CREATE TABLE recipient (
+	recipient_id			SMALLINT UNSIGNED NOT NULL,
+	recipient_first_name	CHAR(50) NOT NULL,
+	recipient_last_name		CHAR(50) NOT NULL,
+	recipient_location		SMALLINT UNSIGNED NOT NULL,
+	recipient_email			CHAR(50) NOT NULL,
+	PRIMARY KEY (recipient_id),
+	FOREIGN KEY (recipient_location) REFERENCES location(location_id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+);
+
+CREATE TABLE category (
+	category_id				SMALLINT UNSIGNED NOT NULL,
+	category_name			VARCHAR(50) NOT NULL,
+	category_description	VARCHAR(50) NOT NULL,
+	PRIMARY KEY	(category_id)
+);
+
+CREATE TABLE quantity (
+	crop_id 	SMALLINT UNSIGNED NOT NULL,
+	quantity	INT UNSIGNED,
+	FOREIGN KEY (crop_id) REFERENCES crop(crop_id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+);
