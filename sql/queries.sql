@@ -1,6 +1,7 @@
 /* Minimum 4 Simple Queries */
 	/* Simple query using logic operators and ORDER BY clause */
-SELECT order_id AS 'Order Number', shipment_date AS 'Date to Ship'
+CREATE VIEW transportView
+AS SELECT order_id AS 'Order Number', shipment_date AS 'Date to Ship'
 FROM transport
 WHERE shipment_date > '2020-01-01'
 AND shipment_date < '2021-01-01'
@@ -14,7 +15,8 @@ ORDER BY shipment_date ASC;
     
 /* Minimum 4 Aggregate Queries */
 	/* Aggregate function using a numeric function */
-SELECT COUNT(*) AS 'Number of Farms'
+CREATE VIEW farmCountView
+AS SELECT COUNT(*) AS 'Number of Farms'
 FROM farm;
 	/* Aggregate function using a string function */
     
@@ -25,7 +27,8 @@ FROM farm;
     
 /* Minimum 4 Complex Queries */
 	/* Complex query using any type of join */
-SELECT farm.order_id AS 'Order Number', transport.shipment_date AS 'Shipment Date'
+CREATE VIEW orderNumDate
+AS SELECT farm.order_id AS 'Order Number', transport.shipment_date AS 'Shipment Date'
 FROM farm
 INNER JOIN transport ON farm.order_id = transport.order_id;
 	/* Complex query using any type of join */
