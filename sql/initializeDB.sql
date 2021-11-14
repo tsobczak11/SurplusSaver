@@ -26,6 +26,8 @@ CREATE TABLE farm (
    PRIMARY KEY(farm_id),
    FOREIGN KEY (order_id) REFERENCES orders(order_id),
    FOREIGN KEY (shipment_id) REFERENCES transport(shipment_id)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
 );
 
 CREATE TABLE transport (
@@ -34,6 +36,8 @@ CREATE TABLE transport (
    shipment_date date NOT NULL,
    PRIMARY KEY (shipment_id),
    FOREIGN KEY (order_id) REFERENCES orders(order_id)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
 );
 
 CREATE TABLE recipient (
