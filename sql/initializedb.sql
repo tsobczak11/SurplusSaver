@@ -65,3 +65,21 @@ CREATE TABLE quantity (
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
 );
+
+CREATE TABLE order (
+	order_id SMALLINT UNSIGNED NOT NULL UNIQUE,
+	recipient_id SMALLINT UNSIGNED NOT NULL,
+	order_date date NOT NULL,
+	PRIMARY KEY (order_id),
+	FOREIGN KEY (recipient_id) REFERENCES recipient(recipient_id)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+);
+
+CREATE TABLE crop (
+	crop_id 	SMALLINT UNSIGNED NOT NULL,
+	crop_name VARCHAR(50) NOT NULL,
+	crop_category VARCHAR(50) NOT NULL,
+	crop_description VARCHAR(50) NOT NULL,
+	PRIMARY KEY (crop_id)
+);
