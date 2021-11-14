@@ -66,7 +66,7 @@ CREATE TABLE quantity (
 		ON UPDATE CASCADE
 );
 
-CREATE TABLE order (
+CREATE TABLE orders (
 	order_id 	VARCHAR(5) NOT NULL UNIQUE,
 	recipient_id 	VARCHAR(5) NOT NULL,
 	order_date 	date NOT NULL,
