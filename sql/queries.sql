@@ -13,7 +13,11 @@ FROM recipient
 WHERE recipient_id > 100
 ORDER BY recipient_last_name;
     /* Simple query using logic operators and ORDER BY clause */
-    
+CREATE VIEW cropView
+AS SELECT crop_name AS 'Name of crop', crop_category AS 'Category of crop', crop_description AS 'Description of crop'
+FROM crop
+WHERE crop_name = 'Corn'
+ORDER BY crop_category;
     /* Simple query using logic operators and ORDER BY clause */
     
     
