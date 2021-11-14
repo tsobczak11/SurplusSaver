@@ -55,11 +55,14 @@ INNER JOIN crop ON quantity.crop_id = crop.crop_id;
 	/* INDEX statement for farm */
 CREATE INDEX farmIndex
 ON farm (order_id);
+
     /* INDEX statement for transport */
 CREATE INDEX transportIndex
 ON transport (shipment_date);
+
     /* INDEX statement for orders */
-    
+CREATE INDEX orderIndex
+ON order (order_id)
     
     /* INDEX statement for recipient */
 CREATE INDEX recipientIndex
@@ -69,7 +72,8 @@ ON recipient (recipient_id);
     
     
     /* INDEX statement for crop */
-    
+CREATE INDEX cropIndex
+ON crop (crop_id)
     
     /* INDEX statement for category */
 CREATE INDEX categoryIndex
