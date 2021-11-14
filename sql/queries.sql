@@ -61,8 +61,8 @@ CREATE INDEX transportIndex
 ON transport (shipment_date);
 
     /* INDEX statement for orders */
-CREATE INDEX orderIndex
-ON order (order_id)
+CREATE INDEX ordersIndex
+ON orders (order_id)
     
     /* INDEX statement for recipient */
 CREATE INDEX recipientIndex
