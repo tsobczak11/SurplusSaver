@@ -51,6 +51,7 @@
 			<a href="<c:url value='/jsps/category/category_menu.jsp'/>" target="body">CRUD category</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/quantity/quantity_menu.jsp'/>" target="body">CRUD quantity</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/recipient/recipient_menu.jsp'/>" target="body">CRUD recipient</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/initialize/init.jsp'/>" target="body">Initialize Database</a> |&nbsp;&nbsp;
 	
 		</c:when>
 		<c:otherwise>
