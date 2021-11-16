@@ -31,7 +31,9 @@ CREATE VIEW recipientNames
 AS SELECT CONCAT(recipient_first_name, ' ', recipient_last_name)
 FROM recipient;
     /* Aggregate function using a date and time function */
-    
+CREATE VIEW orderDateView
+AS SELECT YEAR(order_date)
+FROM orders;
     /* Aggregate function using a GROUP BY and HAVING clauses */
     
     
