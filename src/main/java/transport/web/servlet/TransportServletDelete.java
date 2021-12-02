@@ -36,7 +36,6 @@ public class TransportServletDelete extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 //		String method = request.getParameter("method");
 //		TransportDao entity1Dao = new TransportDao();
 //		Transport entity1 = null;
@@ -77,8 +76,6 @@ public class TransportServletDelete extends HttpServlet {
 //			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
 //		}
 =======
-=======
->>>>>>> Stashed changes
 		String method = request.getParameter("method");
 		TransportDao transportDao = new TransportDao();
 		Transport transport = null;
@@ -118,9 +115,6 @@ public class TransportServletDelete extends HttpServlet {
 			request.setAttribute("msg", "transport Deleted");
 			request.getRequestDispatcher("/jsps/transport/transport_read_output.jsp").forward(request, response);
 		}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 	}
 }

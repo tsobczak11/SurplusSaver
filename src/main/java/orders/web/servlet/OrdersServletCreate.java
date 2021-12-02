@@ -3,10 +3,7 @@ package orders.web.servlet;
 import java.io.IOException;
 import java.util.ArrayList;
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 import java.util.Arrays;
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 import java.util.List;

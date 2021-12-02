@@ -37,7 +37,6 @@ public class FarmServletDelete extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 //		String method = request.getParameter("method");
 //		FarmDao entity1Dao = new FarmDao();
 //		Farm entity1 = null;
@@ -78,8 +77,6 @@ public class FarmServletDelete extends HttpServlet {
 //			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
 //		}
 =======
-=======
->>>>>>> Stashed changes
 		String method = request.getParameter("method");
 		FarmDao farmDao = new FarmDao();
 		Farm farm = null;
@@ -119,9 +116,6 @@ public class FarmServletDelete extends HttpServlet {
 			request.setAttribute("msg", "farm Deleted");
 			request.getRequestDispatcher("/jsps/farm/farm_read_output.jsp").forward(request, response);
 		}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 	}
 }

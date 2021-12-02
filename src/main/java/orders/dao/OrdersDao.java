@@ -88,7 +88,6 @@ public class OrdersDao {
 	 * @throws IllegalAccessException
 	 */
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 //	public void update(Orders form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 //		try {
 //			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -128,8 +127,6 @@ public class OrdersDao {
 //		}
 //	}
 =======
-=======
->>>>>>> Stashed changes
 	public void update(Orders form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -168,8 +165,5 @@ public class OrdersDao {
 			throw new RuntimeException(e);
 		}
 	}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 }

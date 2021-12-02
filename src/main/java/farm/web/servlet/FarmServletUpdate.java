@@ -39,7 +39,6 @@ public class FarmServletUpdate extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 //	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //
 //		String method = request.getParameter("method");
@@ -97,8 +96,6 @@ public class FarmServletUpdate extends HttpServlet {
 //		}
 //	}
 =======
-=======
->>>>>>> Stashed changes
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String method = request.getParameter("method");
@@ -155,9 +152,6 @@ public class FarmServletUpdate extends HttpServlet {
 			request.getRequestDispatcher("/jsps/farm/farm_read_output.jsp").forward(request, response);
 		}
 	}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 }
 

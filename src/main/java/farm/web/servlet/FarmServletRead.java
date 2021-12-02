@@ -43,11 +43,7 @@ public class FarmServletRead extends HttpServlet {
 		
 		try {
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 			farm = farmDao.findByUsername(request.getParameter("farm_id"));
-=======
-			farm = farmDao.findByFarm_id(request.getParameter("farm_id"));
->>>>>>> Stashed changes
 =======
 			farm = farmDao.findByFarm_id(request.getParameter("farm_id"));
 >>>>>>> Stashed changes
