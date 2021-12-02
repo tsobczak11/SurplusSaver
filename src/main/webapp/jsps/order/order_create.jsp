@@ -22,7 +22,7 @@
   
   <body>
   <h1>Create an order</h1>
-<form action="<c:url value='/OrdersServletCreate'/>" method="post">
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 	order id:<input type="text" name="order_id" value="${form.order_id }"/>
 	<span style="color: red; font-weight: 900">${errors.order_id }</span>
 	<br/>
