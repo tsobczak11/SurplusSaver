@@ -25,7 +25,10 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	
+<<<<<<< Updated upstream
 	
+=======
+>>>>>>> Stashed changes
 	order id:<input type="text" name="order_id" value="${orders.order_id }" disabled/>
 	<br/>
 	recipient id：<input type="text" name="recipient_id" value="${orders.recipient_id }" disabled/>

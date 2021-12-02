@@ -15,6 +15,7 @@ import orders.domain.Orders;
  */
 
 public class OrdersServletDelete extends HttpServlet {
+<<<<<<< Updated upstream
 //	private static final long serialVersionUID = 1L;
 //       
 //    /**
@@ -76,6 +77,69 @@ public class OrdersServletDelete extends HttpServlet {
 //			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
 //		}
 //	}
+=======
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     * Modified by Thomas Sobczak
+     */
+    public OrdersServletDelete() {
+        super();
+    }
+    
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request,response);
+	}
+	
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String method = request.getParameter("method");
+		OrdersDao ordersDao = new OrdersDao();
+		Orders orders = null;
+		if(method.equals("search"))
+		{
+			try {
+				orders = ordersDao.findByOrder_id(request.getParameter("order_id"));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+		
+			if(orders.getOrder_id()!=null){
+						System.out.println(orders);
+						request.setAttribute("orders", orders);
+						request.getRequestDispatcher("/jsps/order/order_delete_output.jsp").forward(request, response);			
+				}
+				else{
+				request.setAttribute("msg", "Order not found");
+				request.getRequestDispatcher("/jsps/order/order_read_output.jsp").forward(request, response);
+			}
+		}
+		else if(method.equals("delete"))
+		{	
+			try {
+				ordersDao.delete(request.getParameter("order_id"));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+			request.setAttribute("msg", "Order Deleted");
+			request.getRequestDispatcher("/jsps/order/order_read_output.jsp").forward(request, response);
+		}
+	}
+>>>>>>> Stashed changes
 }
 
 

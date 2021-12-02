@@ -36,6 +36,7 @@ public class FarmServletDelete extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+<<<<<<< Updated upstream
 //		String method = request.getParameter("method");
 //		FarmDao entity1Dao = new FarmDao();
 //		Farm entity1 = null;
@@ -75,6 +76,47 @@ public class FarmServletDelete extends HttpServlet {
 //			request.setAttribute("msg", "Entity Deleted");
 //			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
 //		}
+=======
+		String method = request.getParameter("method");
+		FarmDao farmDao = new FarmDao();
+		Farm farm = null;
+		if(method.equals("search"))
+		{
+			try {
+				farm = farmDao.findByFarm_id(request.getParameter("farm_id"));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+		
+			if(farm.getFarm_id() != null){
+						//System.out.println(farm);
+						request.setAttribute("farm", farm);
+						request.getRequestDispatcher("/jsps/farm/farm_delete_output.jsp").forward(request, response);			
+				}
+				else{
+				request.setAttribute("msg", "Farm not found");
+				request.getRequestDispatcher("/jsps/farm/farm_read_output.jsp").forward(request, response);
+			}
+		}
+		else if(method.equals("delete"))
+		{	
+			try {
+				farmDao.delete(request.getParameter("farm_id"));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+			request.setAttribute("msg", "farm Deleted");
+			request.getRequestDispatcher("/jsps/farm/farm_read_output.jsp").forward(request, response);
+		}
+>>>>>>> Stashed changes
 	}
 }
 

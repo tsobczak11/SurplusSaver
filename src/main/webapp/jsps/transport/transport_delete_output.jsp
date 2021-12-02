@@ -23,15 +23,17 @@
   <body>
   <h1>Delete a transport</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/TransportServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
-	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	shipment id:<input type="text" name="shipment_id" value="${transport.shipment_id }" disabled/>
+
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	order id：<input type="text" name="order_id" value="${transport.order_id }" disabled/>
+
+	<br/>
+	shipment date：<input type="text" name="shipment_date" value="${transport.shipment_date }" disabled/>
+
 	<br/>
 	<input type="submit" value="Delete transport"/>
 </form>

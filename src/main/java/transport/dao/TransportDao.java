@@ -87,6 +87,7 @@ public class TransportDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
+<<<<<<< Updated upstream
 //	public void update(Transport form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 //		try {
 //			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -125,4 +126,44 @@ public class TransportDao {
 //			throw new RuntimeException(e);
 //		}
 //	}
+=======
+	public void update(Transport form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
+			
+			String sql = "UPDATE transport SET order_id = ?, shipment_date = ? where shipment_id = ?;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,form.getOrder_id());
+			preparestatement.setDate(2,form.getShipment_date());
+		    preparestatement.setString(3,form.getShipment_id());
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
+	
+	
+	/**
+	 * @param username
+	 * @throws ClassNotFoundException
+	 * @throws InstantiationException
+	 * @throws IllegalAccessException
+	 */
+	public void delete(String shipment_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
+			
+			String sql = "delete from transport where shipment_id = ?";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,shipment_id_p);
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
+>>>>>>> Stashed changes
 }

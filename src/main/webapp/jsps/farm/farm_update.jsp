@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update a farm</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/FarmServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update farm:<input type="text" name="farm_id" value="${form.farm_id }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>

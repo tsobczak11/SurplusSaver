@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete a transport</title>
+    <title>Update a transport</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -24,23 +24,26 @@
   <h1>Update a transport</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	shipment id:<input type="text" name="shipment_id" value="${transport.shipment_id }" disabled/>
+
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	order id：<input type="text" name="order_id" value="${transport.order_id }" disabled/>
+
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	shipment date：<input type="text" name="shipment_date" value="${transport.shipment_date }" disabled/>
+
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+<form action="<c:url value='/TransportServletUpdate'/>" method="post">
+	<input type="hidden" name="method" value="update"/>
+	<input type="hidden" name="shipment_id" value="${transport.shipment_id }"/>
+	
+	order id：<input type="text" name="order_id" value="${form.order_id }" />
+
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	shipment date：<input type="text" name="shipment_date" value="${form.shipment_date }" />
+
 	<br/>
 	<input type="submit" value="Update transport"/>
 </form>
