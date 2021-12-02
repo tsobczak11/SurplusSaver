@@ -99,7 +99,6 @@
   
   <servlet>
     <description></description>
-<<<<<<< HEAD
     <display-name>FarmServletCreate</display-name>
     <servlet-name>FarmServletCreate</servlet-name>
     <servlet-class>farm.web.servlet.FarmServletCreate</servlet-class>
@@ -282,8 +281,6 @@
   
   <servlet>
     <description></description>
-=======
->>>>>>> parent of df4e06d (Create & Read backend completed for farm, crop, transport)
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>
     
