@@ -87,24 +87,24 @@ public class TransportDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-//	public void update(Transport form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
-//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
-//			
-//			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
-//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-//		    preparestatement.setString(1,form.getPassword());
-//			preparestatement.setString(2,form.getEmail());
-//		    preparestatement.setString(3,form.getUsername());
-//		    preparestatement.executeUpdate();
-//		    connect.close();
-//		} catch(SQLException e) {
-//			throw new RuntimeException(e);
-//		}
-//	}
-//	
-//	
+	public void update(Transport form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
+			
+			String sql = "UPDATE transport SET order_id = ?, shipment_date = ? where shipment_id = ?;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,form.getOrder_id());
+		    preparestatement.setDate(2,form.getShipment_date());
+		    preparestatement.setString(3,form.getShipment_id());
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
+	
+	
 //	/**
 //	 * @param username
 //	 * @throws ClassNotFoundException

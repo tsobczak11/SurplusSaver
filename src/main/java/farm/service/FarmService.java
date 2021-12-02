@@ -22,7 +22,7 @@ public class FarmService {
 	 */
 	public void create(Farm form) throws FarmException, ClassNotFoundException, InstantiationException, IllegalAccessException{
 		// check the primary key of Entity1
-		Farm entity1 = farmDao.findByUsername(form.getFarm_id());
+		Farm entity1 = farmDao.findByFarm_id(form.getFarm_id());
 		if(entity1.getFarm_id()!=null && entity1.getFarm_id().equals(form.getFarm_id())) throw new FarmException("This farm_id name has been registered before!");
 		farmDao.add(form);
 	}

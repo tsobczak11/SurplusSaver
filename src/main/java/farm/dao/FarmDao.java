@@ -30,7 +30,7 @@ public class FarmDao {
 	 */
 	private String MySQL_password = "12345"; //TODO change password
 
-	public Farm findByUsername(String farm_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public Farm findByFarm_id(String farm_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		Farm farm = new Farm();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -87,17 +87,17 @@ public class FarmDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	/*
+	
 	public void update(Farm form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
+			String sql = "UPDATE farm SET order_id = ?, shipment_id = ? where farm_id = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getPassword());
-			preparestatement.setString(2,form.getEmail());
-		    preparestatement.setString(3,form.getUsername());
+		    preparestatement.setString(1,form.getOrder_id());
+			preparestatement.setString(2,form.getShipment_id());
+		    preparestatement.setString(3,form.getFarm_id());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {

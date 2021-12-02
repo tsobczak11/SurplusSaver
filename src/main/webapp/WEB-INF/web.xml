@@ -120,6 +120,17 @@
     <url-pattern>/FarmServletRead</url-pattern>
   </servlet-mapping>
   
+   <servlet>
+    <description></description>
+    <display-name>FarmServletUpdate</display-name>
+    <servlet-name>FarmServletUpdate</servlet-name>
+    <servlet-class>farm.web.servlet.FarmServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FarmServletUpdate</servlet-name>
+    <url-pattern>/FarmServletUpdate</url-pattern>
+  </servlet-mapping>
+  
   
   
     <servlet>
@@ -144,6 +155,17 @@
     <url-pattern>/OrdersServletRead</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>OrdersServletUpdate</display-name>
+    <servlet-name>OrdersServletUpdate</servlet-name>
+    <servlet-class>orders.web.servlet.OrdersServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrdersServletUpdate</servlet-name>
+    <url-pattern>/OrdersServletUpdate</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>
@@ -165,6 +187,17 @@
   <servlet-mapping>
     <servlet-name>TransportServletRead</servlet-name>
     <url-pattern>/TransportServletRead</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>TransportServletUpdate</display-name>
+    <servlet-name>TransportServletUpdate</servlet-name>
+    <servlet-class>transport.web.servlet.TransportServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransportServletUpdate</servlet-name>
+    <url-pattern>/TransportServletUpdate</url-pattern>
   </servlet-mapping>
   
   
