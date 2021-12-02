@@ -13,7 +13,11 @@ FROM recipient
 WHERE recipient_id > 100
 ORDER BY recipient_last_name;
     /* Simple query using logic operators and ORDER BY clause */
-    
+CREATE VIEW cropView
+AS SELECT crop_name AS 'Name of crop', crop_category AS 'Category of crop', crop_description AS 'Description of crop'
+FROM crop
+WHERE crop_name = 'Corn'
+ORDER BY crop_category;
     /* Simple query using logic operators and ORDER BY clause */
     
     
@@ -27,7 +31,9 @@ CREATE VIEW recipientNames
 AS SELECT CONCAT(recipient_first_name, ' ', recipient_last_name)
 FROM recipient;
     /* Aggregate function using a date and time function */
-    
+CREATE VIEW orderDateView
+AS SELECT YEAR(order_date)
+FROM orders;
     /* Aggregate function using a GROUP BY and HAVING clauses */
     
     
@@ -51,11 +57,14 @@ INNER JOIN crop ON quantity.crop_id = crop.crop_id;
 	/* INDEX statement for farm */
 CREATE INDEX farmIndex
 ON farm (order_id);
+
     /* INDEX statement for transport */
 CREATE INDEX transportIndex
 ON transport (shipment_date);
+
     /* INDEX statement for orders */
-    
+CREATE INDEX ordersIndex
+ON orders (order_id)
     
     /* INDEX statement for recipient */
 CREATE INDEX recipientIndex
@@ -65,7 +74,8 @@ ON recipient (recipient_id);
     
     
     /* INDEX statement for crop */
-    
+CREATE INDEX cropIndex
+ON crop (crop_id)
     
     /* INDEX statement for category */
 CREATE INDEX categoryIndex
