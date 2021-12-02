@@ -23,7 +23,7 @@
   <body>
   <h1>Read a farm</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/FarmServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	farm id    :<input type="text" name="farm_id" value="${form.farm_id }"/>
 	<span style="color: red; font-weight: 900">${errors.farm_id }</span>

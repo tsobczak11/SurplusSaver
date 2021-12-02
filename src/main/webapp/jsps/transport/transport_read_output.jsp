@@ -24,11 +24,15 @@
   <h1>Read a transport Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	
+	shipment id:<input type="text" name="shipment_id" value="${transport.shipment_id }" disabled/>
+
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	order id：<input type="text" name="order_id" value="${transport.order_id }" disabled/>
+
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	shipment date：<input type="text" name="shipment_date" value="${transport.shipment_date }" disabled/>
+
 	<br/>
 </form>
 
