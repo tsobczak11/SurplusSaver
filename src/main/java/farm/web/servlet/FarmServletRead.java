@@ -42,11 +42,7 @@ public class FarmServletRead extends HttpServlet {
 		FarmDao farmDao = new FarmDao();
 		
 		try {
-<<<<<<< Updated upstream
 			farm = farmDao.findByUsername(request.getParameter("farm_id"));
-=======
-			farm = farmDao.findByFarm_id(request.getParameter("farm_id"));
->>>>>>> Stashed changes
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {

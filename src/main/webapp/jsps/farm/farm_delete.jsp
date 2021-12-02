@@ -22,9 +22,9 @@
   
   <body>
   <h1>Delete a farm</h1>
-<form action="<c:url value='/FarmServletDelete'/>" method="post">
+<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete farm id  :<input type="text" name="farm_id" value="${form.farm_id }"/>
+	Delete farm   :<input type="text" name="farm_id" value="${form.farm_id }"/>
 	<span style="color: red; font-weight: 900">${errors.farm_id }</span>
 	<br/>
 	<input type="submit" value="Delete farm"/>

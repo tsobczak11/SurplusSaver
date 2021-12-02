@@ -23,13 +23,15 @@
   <body>
   <h1>Delete an order</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/OrdersServletDelete'/>" method="post">
+<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-	order id:<input type="text" name="order_id" value="${orders.order_id }" disabled/>
+		<input type="hidden" name="username" value="${entity1.username }"/>
+	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
 	<br/>
-	recipient id：<input type="text" name="recipient_id" value="${orders.recipient_id }" disabled/>
+	
+	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
 	<br/>
-	order date：<input type="text" name="order_date" value="${orders.order_date }" disabled/>
+	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
 	<br/>
 	<input type="submit" value="Delete order"/>
 </form>

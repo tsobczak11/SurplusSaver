@@ -109,11 +109,7 @@
   </servlet-mapping>
   
   
-<<<<<<< Updated upstream
     <servlet>
-=======
-  <servlet>
->>>>>>> Stashed changes
     <description></description>
     <display-name>FarmServletRead</display-name>
     <servlet-name>FarmServletRead</servlet-name>
@@ -124,36 +120,9 @@
     <url-pattern>/FarmServletRead</url-pattern>
   </servlet-mapping>
   
-<<<<<<< Updated upstream
   
   
     <servlet>
-=======
-  <servlet>
-    <description></description>
-    <display-name>FarmServletUpdate</display-name>
-    <servlet-name>FarmServletUpdate</servlet-name>
-    <servlet-class>farm.web.servlet.FarmServletUpdate</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>FarmServletUpdate</servlet-name>
-    <url-pattern>/FarmServletUpdate</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-    <description></description>
-    <display-name>FarmServletDelete</display-name>
-    <servlet-name>FarmServletDelete</servlet-name>
-    <servlet-class>farm.web.servlet.FarmServletDelete</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>FarmServletDelete</servlet-name>
-    <url-pattern>/FarmServletDelete</url-pattern>
-  </servlet-mapping>
-  
-  
-  <servlet>
->>>>>>> Stashed changes
     <description></description>
     <display-name>OrdersServletCreate</display-name>
     <servlet-name>OrdersServletCreate</servlet-name>
@@ -164,11 +133,7 @@
     <url-pattern>/OrdersServletCreate</url-pattern>
   </servlet-mapping>
   
-<<<<<<< Updated upstream
       <servlet>
-=======
-  <servlet>
->>>>>>> Stashed changes
     <description></description>
     <display-name>OrdersServletRead</display-name>
     <servlet-name>OrdersServletRead</servlet-name>
@@ -179,31 +144,6 @@
     <url-pattern>/OrdersServletRead</url-pattern>
   </servlet-mapping>
   
-<<<<<<< Updated upstream
-=======
-  <servlet>
-    <description></description>
-    <display-name>OrdersServletUpdate</display-name>
-    <servlet-name>OrdersServletUpdate</servlet-name>
-    <servlet-class>orders.web.servlet.OrdersServletUpdate</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>OrdersServletUpdate</servlet-name>
-    <url-pattern>/OrdersServletUpdate</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-    <description></description>
-    <display-name>OrdersServletDelete</display-name>
-    <servlet-name>OrdersServletDelete</servlet-name>
-    <servlet-class>orders.web.servlet.OrdersServletDelete</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>OrdersServletDelete</servlet-name>
-    <url-pattern>/OrdersServletDelete</url-pattern>
-  </servlet-mapping>
-  
->>>>>>> Stashed changes
   
   <servlet>
     <description></description>
@@ -227,31 +167,6 @@
     <url-pattern>/TransportServletRead</url-pattern>
   </servlet-mapping>
   
-<<<<<<< Updated upstream
-=======
-  <servlet>
-    <description></description>
-    <display-name>TransportServletUpdate</display-name>
-    <servlet-name>TransportServletUpdate</servlet-name>
-    <servlet-class>transport.web.servlet.TransportServletUpdate</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>TransportServletUpdate</servlet-name>
-    <url-pattern>/TransportServletUpdate</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-    <description></description>
-    <display-name>TransportServletDelete</display-name>
-    <servlet-name>TransportServletDelete</servlet-name>
-    <servlet-class>transport.web.servlet.TransportServletDelete</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>TransportServletDelete</servlet-name>
-    <url-pattern>/TransportServletDelete</url-pattern>
-  </servlet-mapping>
-  
->>>>>>> Stashed changes
   
   <servlet>
     <description></description>

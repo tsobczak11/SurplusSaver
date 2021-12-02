@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete a transport</h1>
-<form action="<c:url value='/TransportServletDelete'/>" method="post">
+<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete transport:<input type="text" name="shipment_id" value="${form.shipment_id }"/>
 	<span style="color: red; font-weight: 900">${errors.shipment_id }</span>
