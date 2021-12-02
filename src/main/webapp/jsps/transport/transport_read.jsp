@@ -23,7 +23,7 @@
   <body>
   <h1>Read a transport</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/TransportServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	shipment id    :<input type="text" name="shipment_id" value="${form.shipment_id }"/>
 	<span style="color: red; font-weight: 900">${errors.shipment_id }</span>
