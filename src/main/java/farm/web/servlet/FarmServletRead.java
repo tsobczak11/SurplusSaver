@@ -1,4 +1,4 @@
-package entity1.web.servlet;
+package farm.web.servlet;
 
 import java.io.IOException;
 
@@ -8,21 +8,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.dao.TransportDao;
-import entity1.domain.Orders;
+import farm.dao.FarmDao;
+import farm.domain.Farm;
 
 
 /**
  * Servlet implementation class UserServlet
+ * Modified by Thomas Sobczak
  */
 
-public class Entity1ServletRead extends HttpServlet {
+public class FarmServletRead extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Entity1ServletRead() {
+    public FarmServletRead() {
         super();
     }
     
@@ -37,11 +38,11 @@ public class Entity1ServletRead extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Orders entity1 = null;
-		TransportDao entity1Dao = new TransportDao();
+		Farm farm = null;
+		FarmDao farmDao = new FarmDao();
 		
 		try {
-			entity1 = entity1Dao.findByUsername(request.getParameter("username"));
+			farm = farmDao.findByUsername(request.getParameter("farm_id"));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {
@@ -50,14 +51,14 @@ public class Entity1ServletRead extends HttpServlet {
 			e1.printStackTrace();
 		}
 		
-		if(entity1.getUsername()!=null){
-					System.out.println(entity1);
-					request.setAttribute("entity1", entity1);
-					request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+		if(farm.getFarm_id()!=null){
+					//System.out.println(farm);
+					request.setAttribute("farm", farm);
+					request.getRequestDispatcher("/jsps/farm/farm_read_output.jsp").forward(request, response);
 			}
 			else{
-			request.setAttribute("msg", "Entity not found");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Farm not found");
+			request.getRequestDispatcher("/jsps/farm/farm_read_output.jsp").forward(request, response);
 		}
 	}
 }

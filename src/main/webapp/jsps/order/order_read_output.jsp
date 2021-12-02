@@ -24,11 +24,13 @@
   <h1>Read an order Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	
+	
+	order id:<input type="text" name="order_id" value="${orders.order_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	recipient id：<input type="text" name="recipient_id" value="${orders.recipient_id }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	order date：<input type="text" name="order_date" value="${orders.order_date }" disabled/>
 	<br/>
 </form>
 

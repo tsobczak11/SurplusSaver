@@ -23,7 +23,7 @@
   <body>
   <h1>Read an order</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/OrdersServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	order id:<input type="text" name="order_id" value="${form.order_id }"/>
 	<span style="color: red; font-weight: 900">${errors.order_id }</span>

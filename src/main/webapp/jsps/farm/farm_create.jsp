@@ -22,7 +22,7 @@
   
   <body>
   <h1>Create a farm</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/FarmServletCreate'/>" method="post">
 	farm id:<input type="text" name="farm_id" value="${form.farm_id }"/>
 	<span style="color: red; font-weight: 900">${errors.farm_id }</span>
 	<br/>
