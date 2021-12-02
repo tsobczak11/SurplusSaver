@@ -1,4 +1,4 @@
-package farm.dao;
+package entity1.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,13 +12,12 @@ import java.sql.SQLException;
 //import java.util.ArrayList;
 //import java.util.List;
 
-import farm.domain.Farm;
+import entity1.domain.Entity1;
 
 /**
  * DDL functions performed in database
- * Modified by Thomas Sobczak
  */
-public class FarmDao {
+public class Entity1Dao {
 	
 	/**
 	 * user name to connect to the database 
@@ -30,49 +29,49 @@ public class FarmDao {
 	 */
 	private String MySQL_password = "12345"; //TODO change password
 
-	public Farm findByUsername(String farm_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-		Farm farm = new Farm();
+	public Entity1 findByUsername(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Entity1 entity1 = new Entity1();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
-		    String sql = "select * from farm where farm_id=?";
+		    String sql = "select * from entity1 where username=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,farm_id_p);
+		    preparestatement.setString(1,username);
 		    ResultSet resultSet = preparestatement.executeQuery();
 
 		    while(resultSet.next()){
-		    	String farm_id = resultSet.getString("farm_id");
-		    	if(farm_id.equals(farm_id_p)){
-		    		farm.setFarm_id(resultSet.getString("farm_id"));
-		    		farm.setOrder_id(resultSet.getString("order_id"));
-		    		farm.setShipment_id(resultSet.getString("shipment_id"));
+		    	String user_name = resultSet.getString("username");
+		    	if(user_name.equals(username)){
+		    		entity1.setUsername(resultSet.getString("username"));
+		    		entity1.setPassword(resultSet.getString("password"));
+		    		entity1.setEmail(resultSet.getString("email"));		
 		    	}
 		    }
 		    connect.close();
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
-		return farm;
+		return entity1;
 	}	
 	
 	/**
-	 * insert farm
+	 * insert Entity1
 	 * @param form
 	 * @throws ClassNotFoundException 
 	 * @throws IllegalAccessException 
 	 * @throws InstantiationException 
 	 */
 	
-	public void add(Farm form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void add(Entity1 form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
 			
-			String sql = "insert into farm values(?,?,?)";
+			String sql = "insert into entity1 values(?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getFarm_id());
-		    preparestatement.setString(2,form.getOrder_id());
-		    preparestatement.setString(3,form.getShipment_id());
+		    preparestatement.setString(1,form.getUsername());
+		    preparestatement.setString(2,form.getPassword());
+		    preparestatement.setString(3,form.getEmail());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
@@ -87,8 +86,7 @@ public class FarmDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	/*
-	public void update(Farm form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void update(Entity1 form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
@@ -112,7 +110,6 @@ public class FarmDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	/*
 	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -127,5 +124,4 @@ public class FarmDao {
 			throw new RuntimeException(e);
 		}
 	}
-	*/
 }
