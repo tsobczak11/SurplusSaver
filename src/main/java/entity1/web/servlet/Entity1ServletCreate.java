@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.domain.Orders;
+import entity1.domain.Entity1;
 import entity1.service.Entity1Exception;
-import entity1.service.TransportService;
+import entity1.service.Entity1Service;
 
 
 /**
@@ -41,9 +41,9 @@ public class Entity1ServletCreate extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		TransportService entity1service = new TransportService();
+		Entity1Service entity1service = new Entity1Service();
 		Map<String,String[]> paramMap = request.getParameterMap();
-		Orders form = new Orders();
+		Entity1 form = new Entity1();
 		List<String> info = new ArrayList<String>();
 
 		for(String name : paramMap.keySet()) {

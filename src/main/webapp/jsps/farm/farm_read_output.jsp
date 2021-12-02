@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read farm Output</title>
+    <title>Read a farm Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,18 +21,14 @@
   </head>
   
   <body>
-  <h1>Read farm Output</h1>
+  <h1>Read a farm Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	
-	farm id:<input type="text" name="farm_id" value="${farm.farm_id }" disabled/>
-
+	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
 	<br/>
-	order id：<input type="text" name="order_id" value="${farm.order_id }" disabled/>
-
+	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
 	<br/>
-	shipment id	：<input type="text" name="shipment_id" value="${farm.shipment_id }" disabled/>
-
+	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
 	<br/>
 </form>
 

@@ -19,7 +19,7 @@
 <body>
 	  <h1>Create a quantity</h1>
 	<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-		category id:<input type="text" name="category_id" value="${form.category_id }"/>
+		crop id:<input type="text" name="category_id" value="${form.crop_id }"/>
 		<span style="color: red; font-weight: 900">${errors.category_id }</span>
 		<br/>
 		quantity：<input type="text" name="quantity" value="${form.quantity }"/>
