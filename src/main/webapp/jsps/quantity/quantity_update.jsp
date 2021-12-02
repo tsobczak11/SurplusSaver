@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update a crop</h1>
+  <h1>Update a quantity</h1>
 <form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update quantity:<input type="text" name="crop_id" value="${form.crop_id }"/>

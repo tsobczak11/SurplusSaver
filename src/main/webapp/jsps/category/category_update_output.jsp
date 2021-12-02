@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete a crop</title>
+    <title>Delete a category</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">

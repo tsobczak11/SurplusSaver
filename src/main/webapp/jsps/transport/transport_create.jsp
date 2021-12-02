@@ -22,7 +22,7 @@
   
   <body>
   <h1>Create a transport</h1>
-<form action="<c:url value='/TransportServletCreate'/>" method="post">
+<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 	shipment id:<input type="text" name="shipment_id" value="${form.shipment_id }"/>
 	<span style="color: red; font-weight: 900">${errors.shipment_id }</span>
 	<br/>
