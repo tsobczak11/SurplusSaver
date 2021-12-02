@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Delete a crop</h1>
+  <h1>Delete a category</h1>
 <form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete category   :<input type="text" name="category_id" value="${form.category_id }"/>

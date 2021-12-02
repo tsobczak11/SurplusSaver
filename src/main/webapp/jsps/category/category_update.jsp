@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update a crop</title>
+    <title>Update a category</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update a crop</h1>
+  <h1>Update a category</h1>
 <form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update category:<input type="text" name="category_id" value="${form.category_id }"/>
