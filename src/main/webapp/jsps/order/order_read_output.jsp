@@ -26,7 +26,10 @@
 <form>
 	
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 	order id:<input type="text" name="order_id" value="${orders.order_id }" disabled/>

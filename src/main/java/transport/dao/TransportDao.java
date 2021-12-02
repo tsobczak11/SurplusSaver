@@ -88,6 +88,7 @@ public class TransportDao {
 	 * @throws IllegalAccessException
 	 */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 //	public void update(Transport form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 //		try {
 //			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -127,6 +128,8 @@ public class TransportDao {
 //		}
 //	}
 =======
+=======
+>>>>>>> Stashed changes
 	public void update(Transport form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -165,5 +168,8 @@ public class TransportDao {
 			throw new RuntimeException(e);
 		}
 	}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }

@@ -110,7 +110,11 @@
   
   
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <servlet>
+=======
+  <servlet>
+>>>>>>> Stashed changes
 =======
   <servlet>
 >>>>>>> Stashed changes
@@ -125,10 +129,13 @@
   </servlet-mapping>
   
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   
   
     <servlet>
 =======
+=======
+>>>>>>> Stashed changes
   <servlet>
     <description></description>
     <display-name>FarmServletUpdate</display-name>
@@ -153,6 +160,9 @@
   
   
   <servlet>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     <description></description>
     <display-name>OrdersServletCreate</display-name>
@@ -165,7 +175,11 @@
   </servlet-mapping>
   
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <servlet>
+=======
+  <servlet>
+>>>>>>> Stashed changes
 =======
   <servlet>
 >>>>>>> Stashed changes
@@ -180,7 +194,10 @@
   </servlet-mapping>
   
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
   <servlet>
     <description></description>
     <display-name>OrdersServletUpdate</display-name>
@@ -203,6 +220,9 @@
     <url-pattern>/OrdersServletDelete</url-pattern>
   </servlet-mapping>
   
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   
   <servlet>
@@ -228,7 +248,10 @@
   </servlet-mapping>
   
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
   <servlet>
     <description></description>
     <display-name>TransportServletUpdate</display-name>
@@ -251,6 +274,9 @@
     <url-pattern>/TransportServletDelete</url-pattern>
   </servlet-mapping>
   
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   
   <servlet>

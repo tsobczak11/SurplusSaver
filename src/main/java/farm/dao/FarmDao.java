@@ -31,7 +31,11 @@ public class FarmDao {
 	private String MySQL_password = "12345"; //TODO change password
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	public Farm findByUsername(String farm_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+=======
+	public Farm findByFarm_id(String farm_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+>>>>>>> Stashed changes
 =======
 	public Farm findByFarm_id(String farm_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 >>>>>>> Stashed changes
@@ -92,7 +96,11 @@ public class FarmDao {
 	 * @throws IllegalAccessException
 	 */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	/*
+=======
+	
+>>>>>>> Stashed changes
 =======
 	
 >>>>>>> Stashed changes
@@ -102,17 +110,23 @@ public class FarmDao {
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
 			
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,form.getPassword());
 			preparestatement.setString(2,form.getEmail());
 		    preparestatement.setString(3,form.getUsername());
 =======
+=======
+>>>>>>> Stashed changes
 			String sql = "UPDATE farm SET order_id = ?, shipment_id = ? where farm_id = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,form.getOrder_id());
 			preparestatement.setString(2,form.getShipment_id());
 		    preparestatement.setString(3,form.getFarm_id());
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 		    preparestatement.executeUpdate();
 		    connect.close();
@@ -129,8 +143,13 @@ public class FarmDao {
 	 * @throws IllegalAccessException
 	 */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	/*
 	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+=======
+	
+	public void delete(String farm_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+>>>>>>> Stashed changes
 =======
 	
 	public void delete(String farm_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
@@ -140,9 +159,15 @@ public class FarmDao {
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
 			
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 			String sql = "delete from entity1 where username = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,username);
+=======
+			String sql = "delete from farm where farm_id = ?";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,farm_id_p);
+>>>>>>> Stashed changes
 =======
 			String sql = "delete from farm where farm_id = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
@@ -155,7 +180,11 @@ public class FarmDao {
 		}
 	}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	*/
+=======
+	
+>>>>>>> Stashed changes
 =======
 	
 >>>>>>> Stashed changes

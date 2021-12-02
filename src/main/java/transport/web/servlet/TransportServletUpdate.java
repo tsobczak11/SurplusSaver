@@ -3,7 +3,10 @@ package transport.web.servlet;
 import java.io.IOException;
 import java.util.ArrayList;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import java.util.Arrays;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 import java.util.List;
@@ -43,6 +46,7 @@ public class TransportServletUpdate extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 //		String method = request.getParameter("method");
 //		TransportDao entity1dao = new TransportDao();
@@ -98,6 +102,8 @@ public class TransportServletUpdate extends HttpServlet {
 //			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
 //		}
 =======
+=======
+>>>>>>> Stashed changes
 		String method = request.getParameter("method");
 		TransportDao transportdao = new TransportDao();
 		Transport transport = null;
@@ -151,6 +157,9 @@ public class TransportServletUpdate extends HttpServlet {
 			request.setAttribute("msg", "transport Updated");
 			request.getRequestDispatcher("/jsps/transport/transport_read_output.jsp").forward(request, response);
 		}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	}
 }

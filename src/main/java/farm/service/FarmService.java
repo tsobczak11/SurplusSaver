@@ -23,7 +23,11 @@ public class FarmService {
 	public void create(Farm form) throws FarmException, ClassNotFoundException, InstantiationException, IllegalAccessException{
 		// check the primary key of Entity1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		Farm entity1 = farmDao.findByUsername(form.getFarm_id());
+=======
+		Farm entity1 = farmDao.findByFarm_id(form.getFarm_id());
+>>>>>>> Stashed changes
 =======
 		Farm entity1 = farmDao.findByFarm_id(form.getFarm_id());
 >>>>>>> Stashed changes

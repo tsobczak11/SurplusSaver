@@ -16,6 +16,7 @@ import orders.domain.Orders;
 
 public class OrdersServletDelete extends HttpServlet {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 //	private static final long serialVersionUID = 1L;
 //       
 //    /**
@@ -78,6 +79,8 @@ public class OrdersServletDelete extends HttpServlet {
 //		}
 //	}
 =======
+=======
+>>>>>>> Stashed changes
 	private static final long serialVersionUID = 1L;
        
     /**
@@ -139,6 +142,9 @@ public class OrdersServletDelete extends HttpServlet {
 			request.getRequestDispatcher("/jsps/order/order_read_output.jsp").forward(request, response);
 		}
 	}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 
