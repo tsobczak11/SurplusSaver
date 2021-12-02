@@ -35,45 +35,45 @@ public class TransportServletDelete extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		String method = request.getParameter("method");
-//		TransportDao entity1Dao = new TransportDao();
-//		Transport entity1 = null;
-//		if(method.equals("search"))
-//		{
-//			try {
-//				entity1 = entity1Dao.findByShipment_id(request.getParameter("username"));
-//			} catch (ClassNotFoundException e1) {
-//				e1.printStackTrace();
-//			} catch (InstantiationException e1) {
-//				e1.printStackTrace();
-//			} catch (IllegalAccessException e1) {
-//				e1.printStackTrace();
-//			}
-//		
-//			if(entity1.getUsername()!=null){
-//						System.out.println(entity1);
-//						request.setAttribute("entity1", entity1);
-//						request.getRequestDispatcher("/jsps/entity1/entity1_delete_output.jsp").forward(request, response);			
-//				}
-//				else{
-//				request.setAttribute("msg", "Entity not found");
-//				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//			}
-//		}
-//		else if(method.equals("delete"))
-//		{	
-//			try {
-//				entity1Dao.delete(request.getParameter("username"));
-//			} catch (ClassNotFoundException e1) {
-//				e1.printStackTrace();
-//			} catch (InstantiationException e1) {
-//				e1.printStackTrace();
-//			} catch (IllegalAccessException e1) {
-//				e1.printStackTrace();
-//			}
-//			request.setAttribute("msg", "Entity Deleted");
-//			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//		}
+		String method = request.getParameter("method");
+		TransportDao transportDao = new TransportDao();
+		Transport transport = null;
+		if(method.equals("search"))
+		{
+			try {
+				transport = transportDao.findByShipment_id(request.getParameter("shipment_id"));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+		
+			if(transport.getShipment_id()!=null){
+						System.out.println(transport);
+						request.setAttribute("transport", transport);
+						request.getRequestDispatcher("/jsps/transport/transport_delete_output.jsp").forward(request, response);			
+				}
+				else{
+				request.setAttribute("msg", "transport not found");
+				request.getRequestDispatcher("/jsps/transport/transport_read_output.jsp").forward(request, response);
+			}
+		}
+		else if(method.equals("delete"))
+		{	
+			try {
+				transportDao.delete(request.getParameter("shipment_id"));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+			request.setAttribute("msg", "transport Deleted");
+			request.getRequestDispatcher("/jsps/transport/transport_read_output.jsp").forward(request, response);
+		}
 	}
 }
 

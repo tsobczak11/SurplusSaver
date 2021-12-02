@@ -131,6 +131,17 @@
     <url-pattern>/FarmServletUpdate</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>FarmServletDelete</display-name>
+    <servlet-name>FarmServletDelete</servlet-name>
+    <servlet-class>farm.web.servlet.FarmServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FarmServletDelete</servlet-name>
+    <url-pattern>/FarmServletDelete</url-pattern>
+  </servlet-mapping>
+  
   
   
     <servlet>
@@ -166,6 +177,17 @@
     <url-pattern>/OrdersServletUpdate</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>OrdersServletDelete</display-name>
+    <servlet-name>OrdersServletDelete</servlet-name>
+    <servlet-class>orders.web.servlet.OrdersServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrdersServletDelete</servlet-name>
+    <url-pattern>/OrdersServletDelete</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>
@@ -198,6 +220,17 @@
   <servlet-mapping>
     <servlet-name>TransportServletUpdate</servlet-name>
     <url-pattern>/TransportServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>TransportServletDelete</display-name>
+    <servlet-name>TransportServletDelete</servlet-name>
+    <servlet-class>transport.web.servlet.TransportServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransportServletDelete</servlet-name>
+    <url-pattern>/TransportServletDelete</url-pattern>
   </servlet-mapping>
   
   

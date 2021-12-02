@@ -106,19 +106,19 @@ public class OrdersDao {
 	
 	
 	/**
-	 * @param username
+	 * @param order_id_p
 	 * @throws ClassNotFoundException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void delete(String order_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
 			
-			String sql = "delete from entity1 where username = ?";
+			String sql = "delete from orders where order_id = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,username);
+		    preparestatement.setString(1,order_id_p);
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
