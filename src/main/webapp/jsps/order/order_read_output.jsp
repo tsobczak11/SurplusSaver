@@ -24,6 +24,7 @@
   <h1>Read an order Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
+<<<<<<< HEAD
 	
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -33,10 +34,13 @@
 =======
 >>>>>>> Stashed changes
 	order id:<input type="text" name="order_id" value="${orders.order_id }" disabled/>
+=======
+	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+>>>>>>> parent of df4e06d (Create & Read backend completed for farm, crop, transport)
 	<br/>
-	recipient id：<input type="text" name="recipient_id" value="${orders.recipient_id }" disabled/>
+	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
 	<br/>
-	order date：<input type="text" name="order_date" value="${orders.order_date }" disabled/>
+	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
 	<br/>
 </form>
 
