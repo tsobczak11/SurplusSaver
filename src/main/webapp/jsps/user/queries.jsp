@@ -22,10 +22,11 @@
   </head>
   
   <body>
-    <h1>Welcome to the Demo</h1>
+    <h1>List of queries</h1>
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 
+    <br/>
+ 	<a href="<c:url value='/numOrders'/>" target="body">Please list all the orders in the table</a>&nbsp;&nbsp;
     
   </body>
 </html>
