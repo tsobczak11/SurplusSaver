@@ -1,5 +1,6 @@
 package init.service;
 
+import java.io.InputStream;
 import java.util.List;
 
 import init.dao.InitDao;
@@ -14,10 +15,11 @@ public class InitService {
 	
 	/**
 	 * Register a user
+	 * @param input 
 	 */
-	public void intializeDB() throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException{
+	public void intializeDB(InputStream input) throws InitException, ClassNotFoundException, InstantiationException, IllegalAccessException{
 		
-		initDao.initializeDB();
+		initDao.initialize(input);
 	}
 	
 	
