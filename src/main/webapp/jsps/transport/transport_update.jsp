@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update a transport</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/TransportServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update transport:<input type="text" name="shipment_id" value="${form.shipment_id }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
