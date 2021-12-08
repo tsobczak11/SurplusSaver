@@ -1,6 +1,8 @@
 package transport.service;
 
 
+import java.util.List;
+
 import transport.dao.TransportDao;
 import transport.domain.Transport;
 
@@ -26,5 +28,9 @@ public class TransportService {
 		if(entity1.getShipment_id()!=null && entity1.getShipment_id().equals(form.getShipment_id())) throw new TransportException("This transport name has been registered already!");
 		transportDao.add(form);
 	}
-
+	
+	public List<Object> findNumOrders() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return transportDao.findNumOrders();
+		
+	}
 }

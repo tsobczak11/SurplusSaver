@@ -22,7 +22,6 @@ CREATE TABLE farm (
    farm_id     VARCHAR(5) NOT NULL UNIQUE,
    order_id    VARCHAR(5) NOT NULL UNIQUE,
    shipment_id VARCHAR(5) NOT NULL UNIQUE,
-   location_id VARCHAR(5) NOT NULL UNIQUE,
    PRIMARY KEY(farm_id),
    FOREIGN KEY (shipment_id) REFERENCES transport(shipment_id)
 	ON DELETE CASCADE
