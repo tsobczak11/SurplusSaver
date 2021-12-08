@@ -256,6 +256,17 @@
     <url-pattern>/numOrders</url-pattern>
   </servlet-mapping>
   
+   <servlet>
+    <description></description>
+    <display-name>orderDate</display-name>
+    <servlet-name>orderDate</servlet-name>
+    <servlet-class>farm.web.servlet.orderDate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderDate</servlet-name>
+    <url-pattern>/orderDate</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

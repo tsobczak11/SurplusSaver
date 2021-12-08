@@ -5,14 +5,15 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 //import java.util.ArrayList;
 //import java.util.List;
 
 import farm.domain.Farm;
+import farm.domain.orderDate;
+import transport.domain.Transport;
 
 /**
  * DDL functions performed in database
@@ -126,6 +127,29 @@ public class FarmDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	
+	public List<Object> findOrderDate() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
+			String sql = "select * from ordernumdate";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				orderDate orderdate = new orderDate();
+				orderdate.setOrder_id(resultSet.getString("Order Number"));
+				orderdate.setShipment_date(java.sql.Date.valueOf(resultSet.getString("Shipment Date")));
+	    		list.add(orderdate);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
 	}
 	
 }

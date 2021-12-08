@@ -1,6 +1,8 @@
 package farm.service;
 
 
+import java.util.List;
+
 import farm.dao.FarmDao;
 import farm.domain.Farm;
 
@@ -25,6 +27,10 @@ public class FarmService {
 		Farm entity1 = farmDao.findByFarm_id(form.getFarm_id());
 		if(entity1.getFarm_id()!=null && entity1.getFarm_id().equals(form.getFarm_id())) throw new FarmException("This farm_id name has been registered before!");
 		farmDao.add(form);
+	}
+	public List<Object> findOrderDate() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return farmDao.findOrderDate();
+		
 	}
 
 }
