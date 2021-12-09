@@ -25,13 +25,13 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/CategoryServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="category_id" value="${category.category_id }"/>
+	Category_id    :<input type="text" name="category_id" value="${category.category_id }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Category_name：<input type="text" name="category_name" value="${category.category_name }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Category_description	：<input type="text" name="category_description" value="${category.category_description }" disabled/>
 	<br/>
 	<input type="submit" value="Delete category"/>
 </form>

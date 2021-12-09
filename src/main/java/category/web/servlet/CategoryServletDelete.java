@@ -53,11 +53,11 @@ public class CategoryServletDelete extends HttpServlet {
 			if(category.getCategory_id()!=null){
 						System.out.println(category);
 						request.setAttribute("category", category);
-						request.getRequestDispatcher("/jsps/entity1/category_delete_output.jsp").forward(request, response);			
+						request.getRequestDispatcher("/jsps/category/category_delete_output.jsp").forward(request, response);			
 				}
 				else{
 				request.setAttribute("msg", "Category not found");
-				request.getRequestDispatcher("/jsps/entity1/category_read_output.jsp").forward(request, response);
+				request.getRequestDispatcher("/jsps/category/category_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("delete"))
@@ -72,7 +72,7 @@ public class CategoryServletDelete extends HttpServlet {
 				e1.printStackTrace();
 			}
 			request.setAttribute("msg", "Category Deleted");
-			request.getRequestDispatcher("/jsps/entity1/category_read_output.jsp").forward(request, response);
+			request.getRequestDispatcher("/jsps/category/category_read_output.jsp").forward(request, response);
 		}
 	}
 }
