@@ -33,7 +33,7 @@
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/CategoryServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
 				<input type="hidden" name="username" value="${entity1.username }"/>
 	Password：<input type="password" name="password" value="${form.password }"/>

@@ -23,7 +23,7 @@
   <body>
   <h1>Read a category</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/CategoryServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	category id    :<input type="text" name="category_id" value="${form.category_id }"/>
 	<span style="color: red; font-weight: 900">${errors.category_id }</span>
