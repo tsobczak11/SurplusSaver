@@ -71,6 +71,22 @@ CREATE TABLE crop (
 
 CREATE TABLE quantity (
 	crop_id 	VARCHAR(5) NOT NULL,
-	quantity	INT UNSIGNED
+	quantity	INT UNSIGNED,
+	PRIMARY KEY (crop_id)
+);
+
+CREATE TABLE location (
+	location_id 	VARCHAR(5) NOT NULL,
+	street			VARCHAR(50) NOT NULL,
+	city			VARCHAR(50) NOT NULL,
+	state			CHAR(2) NOT NULL,
+	country			VARCHAR(50) NOT NULL,
+	PRIMARY KEY (location_id)
+);
+
+CREATE TABLE available_surplus (
+	available_surplus_id 	VARCHAR(5) NOT NULL,
+	crod_id					VARCHAR(5) NOT NULL,
+	quantity INT
 );
 
