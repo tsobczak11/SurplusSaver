@@ -24,11 +24,11 @@
   <h1>Read a category Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	Category_id    :<input type="text" name="category_id" value="${category.category_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Category_name：<input type="text" name="category_description" value="${category.category_name}" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Category_description	：<input type="text" name="category_description" value="${category.category_description }" disabled/>
 	<br/>
 </form>
 

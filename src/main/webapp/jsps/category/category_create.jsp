@@ -18,7 +18,7 @@
 </head>
 <body>
 	  <h1>Create a category</h1>
-	<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+	<form action="<c:url value='/CategoryServletCreate'/>" method="post">
 		category id:<input type="text" name="category_id" value="${form.category_id }"/>
 		<span style="color: red; font-weight: 900">${errors.category_id }</span>
 		<br/>

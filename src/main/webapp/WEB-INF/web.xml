@@ -318,6 +318,53 @@
     <url-pattern>/orderDate</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>CategoryServletCreate</display-name>
+    <servlet-name>CategoryServletCreate</servlet-name>
+    <servlet-class>category.web.servlet.CategoryServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServletCreate</servlet-name>
+    <url-pattern>/CategoryServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CategoryServletRead</display-name>
+    <servlet-name>CategoryServletRead</servlet-name>
+    <servlet-class>category.web.servlet.CategoryServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServletRead</servlet-name>
+    <url-pattern>/CategoryServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CategoryServletDelete</display-name>
+    <servlet-name>CategoryServletDelete</servlet-name>
+    <servlet-class>category.web.servlet.CategoryServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServletDelete</servlet-name>
+    <url-pattern>/CategoryServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CategoryServletUpdate</display-name>
+    <servlet-name>CategoryServletUpdate</servlet-name>
+    <servlet-class>category.web.servlet.CategoryServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServletUpdate</servlet-name>
+    <url-pattern>/CategoryServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

@@ -23,7 +23,7 @@
   <body>
   <h1>Delete a category</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/CategoryServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
 		<input type="hidden" name="username" value="${entity1.username }"/>
 	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
