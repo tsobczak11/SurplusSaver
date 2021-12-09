@@ -22,18 +22,18 @@ public class CategoryDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "surplus_saver"; //TODO change user
+	private String MySQL_user = "root"; //TODO change user
 	
 	/**
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "12345"; //TODO change password
+	private String MySQL_password = "#427252021Ma"; //TODO change password
 
 	public Category findByCategory_id(String category_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		Category category = new Category();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/surplus_saver", MySQL_user, MySQL_password);
+			Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/surplus_saver", MySQL_user, MySQL_password);
 		    String sql = "select * from category where category_id=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,category_id_p);
