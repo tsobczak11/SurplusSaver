@@ -18,7 +18,7 @@
 </head>
 <body>
 	  <h1>Create a quantity</h1>
-	<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+	<form action="<c:url value='/RecipientServletCreate'/>" method="post">
 		recipient id:<input type="text" name="recipient_id" value="${form.recipient_id }"/>
 		<span style="color: red; font-weight: 900">${errors.recipient_id }</span>
 		<br/>

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read a quantity</title>
+    <title>Read a recipient</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,16 +23,10 @@
   <body>
   <h1>Read a recipient</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/RecipientServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	recipient id    :<input type="text" name="crop_id" value="${form.crop_id }"/>
-	<span style="color: red; font-weight: 900">${errors.crop_id }</span>
-	<!-- <br/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span> -->
+	recipient id    :<input type="text" name="recipient_id" value="${form.recipient_id }"/>
+	<span style="color: red; font-weight: 900">${errors.recipient_id }</span>
 	<br/>
 	<input type="submit" value="Read recipient"/>
 </form>

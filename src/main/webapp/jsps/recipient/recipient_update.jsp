@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update a recipient</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/RecipientServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update recipient:<input type="text" name="recipient_id" value="${form.recipient_id }"/>
 	<span style="color: red; font-weight: 900">${errors.recipient_id }</span>

@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete a recipient</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/RecipientServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete recipient   :<input type="text" name="recipient_id" value="${form.recipient_id }"/>
 	<span style="color: red; font-weight: 900">${errors.recipient_id }</span>
