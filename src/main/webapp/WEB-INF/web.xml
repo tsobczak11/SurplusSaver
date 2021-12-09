@@ -144,6 +144,57 @@
   
   
   
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>LocationServletCreate</display-name>
+    <servlet-name>LocationServletCreate</servlet-name>
+    <servlet-class>location.web.servlet.LocationServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LocationServletCreate</servlet-name>
+    <url-pattern>/LocationServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>LocationServletRead</display-name>
+    <servlet-name>LocationServletRead</servlet-name>
+    <servlet-class>location.web.servlet.LocationServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LocationServletRead</servlet-name>
+    <url-pattern>/LocationServletRead</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>LocationServletUpdate</display-name>
+    <servlet-name>LocationServletUpdate</servlet-name>
+    <servlet-class>location.web.servlet.LocationServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LocationServletUpdate</servlet-name>
+    <url-pattern>/LocationServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LocationServletDelete</display-name>
+    <servlet-name>LocationServletDelete</servlet-name>
+    <servlet-class>location.web.servlet.LocationServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LocationServletDelete</servlet-name>
+    <url-pattern>/LocationServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
     <servlet>
     <description></description>
     <display-name>OrdersServletCreate</display-name>

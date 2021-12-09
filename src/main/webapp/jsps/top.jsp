@@ -38,26 +38,21 @@
 <!-- Thomas Sobczak = farm and order entities -->
 <!-- Ramzi Rimawi = crop and transport entities -->
 <!-- Matthew Alvero = category, quantity, recipient entities -->
+<!-- Ryan Thommes = location, available_surplus -->
 <h1 style="text-align: center;">CS 480 | surplus_saver</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
 			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
 			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp;
-			<a href="<c:url value='/jsps/farm/farm_menu.jsp'/>" target="body">CRUD farm</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/order/order_menu.jsp'/>" target="body">CRUD order</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/crop/crop_menu.jsp'/>" target="body">CRUD crop</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/transport/transport_menu.jsp'/>" target="body">CRUD transport</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/category/category_menu.jsp'/>" target="body">CRUD category</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/quantity/quantity_menu.jsp'/>" target="body">CRUD quantity</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/recipient/recipient_menu.jsp'/>" target="body">CRUD recipient</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/initialize/init.jsp'/>" target="body">Initialize Database</a> |&nbsp;&nbsp;
+
 	
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
+			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp;
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
 			<a href="<c:url value='/jsps/farm/farm_menu.jsp'/>" target="body">CRUD farm</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/order/order_menu.jsp'/>" target="body">CRUD order</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/crop/crop_menu.jsp'/>" target="body">CRUD crop</a> |&nbsp;&nbsp;
@@ -65,6 +60,8 @@
 			<a href="<c:url value='/jsps/category/category_menu.jsp'/>" target="body">CRUD category</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/quantity/quantity_menu.jsp'/>" target="body">CRUD quantity</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/recipient/recipient_menu.jsp'/>" target="body">CRUD recipient</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/location/location_menu.jsp'/>" target="body">CRUD location</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/available_surplus/available_surplus_menu.jsp'/>" target="body">CRUD available_surplus</a> &nbsp;&nbsp;
 		</c:otherwise>
 	</c:choose>
 
