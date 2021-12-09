@@ -1,8 +1,7 @@
-package category.web.servlet;
+package recipient.web.servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -11,20 +10,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import category.dao.CategoryDao;
-import category.domain.Category;
+import recipient.dao.RecipientDao;
+import recipient.domain.Recipient;
 
 /**
  * Servlet implementation class UserServlet
  */
 
-public class Entity1ServletUpdate extends HttpServlet {
+public class RecipientServletUpdate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public Entity1ServletUpdate() {
+	public RecipientServletUpdate() {
 		super();
 	}
 
@@ -41,13 +40,13 @@ public class Entity1ServletUpdate extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String method = request.getParameter("method");
-		TransportDao entity1dao = new TransportDao();
-		Orders entity1 = null;
+		RecipientDao recipientDao = new RecipientDao();
+		Recipient recipient = null;
 
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1dao.findByUsername(request.getParameter("username"));
+				recipient = recipientDao.findByRecipient_id(request.getParameter("recipient"));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -56,32 +55,34 @@ public class Entity1ServletUpdate extends HttpServlet {
 				e1.printStackTrace();
 			}
 
-			if(entity1.getUsername()!=null){
-				request.setAttribute("entity1", entity1);
-				request.getRequestDispatcher("/jsps/entity1/entity1_update_output.jsp").forward(request, response);
+			if(recipient.getRecipient_id()!=null){
+				request.setAttribute("recipient", recipient);
+				request.getRequestDispatcher("/jsps/recipient/recipient_update_output.jsp").forward(request, response);
 
 			}
 			else{
-				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.setAttribute("msg", "Recipient not found");
+				request.getRequestDispatcher("/jsps/recipient/recipient_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("update"))
 		{
 			Map<String,String[]> paramMap = request.getParameterMap();
-			Orders form = new Orders();
+			Recipient form = new Recipient();
 			List<String> info = new ArrayList<String>();
 
 			for(String name : paramMap.keySet()) {
 				String[] values = paramMap.get(name);
 				info.add(values[0]);
 			}
-			form.setPassword(info.get(2));
-			form.setEmail(info.get(3));
-			form.setUsername(request.getParameter("username"));
+			form.setRecipient_id(info.get(0));
+			form.setRecipient_first_name(info.get(1));
+			form.setRecipient_last_name(info.get(2));
+			form.setRecipient_location(info.get(3));
+			form.setRecipient_email(info.get(4));
 
 			try {
-				entity1dao.update(form);
+				recipientDao.update(form);
 
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
@@ -90,8 +91,8 @@ public class Entity1ServletUpdate extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Updated");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Recipient Updated");
+			request.getRequestDispatcher("/jsps/recipient/recipient_read_output.jsp").forward(request, response);
 		}
 	}
 }
