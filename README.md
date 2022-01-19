@@ -69,4 +69,3 @@ This database is one of a kind, we could not find any existing widescale program
 
 ![image](https://user-images.githubusercontent.com/54131271/139553805-7c8c66b1-4d56-4f3b-be15-735f198f0d79.png)
 
-![image](/images/delete_quantity.PNG)
