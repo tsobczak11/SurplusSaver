@@ -69,35 +69,4 @@ This database is one of a kind, we could not find any existing widescale program
 
 ![image](https://user-images.githubusercontent.com/54131271/139553805-7c8c66b1-4d56-4f3b-be15-735f198f0d79.png)
 
-## CRUD for category
-![image](/images/category_CRUD.PNG)
-
-![image](/images/create_category.PNG)
-
-![image](/images/read_category.PNG)
-
-![image](/images/update_category.PNG)
-
-![image](/images/delete_category.PNG)
-
-## CRUD for quantity
-![image](/images/quantity_CRUD.PNG)
-
-![image](/images/create_quantity.PNG)
-
-![image](/images/read_quantity.PNG)
-
-![image](/images/update_quantity.PNG)
-
-![image](/images/delete_quantity.PNG)
-
-## CRUD for recipient
-![image](/images/recipient_CRUD.PNG)
-
-![image](/images/create_recipient.PNG)
-
-![image](/images/read_recipient.PNG)
-
-![image](/images/update_recipient.PNG)
-
 ![image](/images/delete_quantity.PNG)
